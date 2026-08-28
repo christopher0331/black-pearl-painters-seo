@@ -1,0 +1,1444 @@
+{
+  "path": "/gallery/",
+  "url": "https://blackpearlpainters.com/gallery/",
+  "title": "Gallery - Black Pearl Painters",
+  "desc": "Check out our project gallery! Give the experts at Black Pearl Painters a call today for an estimate.",
+  "canonical": "https://blackpearlpainters.com/gallery/",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "h1": [
+    "Gallery"
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Just some of our amazing homes!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Residential Painting Projects"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/DJI_0844-1-scaled.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/DJI_0844-1-scaled.jpg",
+      "alt": "DJI 0844 1 scaled",
+      "title": "Dji_0844 (1)"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Painters-Residential-Project-3-5-e1747402182181-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Painters-Residential-Project-3-5-e1747402182181-400x284.jpg",
+      "alt": "Black Pearl Painters, transforming homes around Puget Sound",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Exterior-Painting-Black-Pearl-Painting-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Exterior-Painting-Black-Pearl-Painting-400x284.jpg",
+      "alt": "Exterior Home Painters",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/Screenshot-2025-05-01-181948-1-400x284.png",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/Screenshot-2025-05-01-181948-1-400x284.png",
+      "alt": "screenshot",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Residential-Project-3-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Residential-Project-3-1-400x284.jpg",
+      "alt": "Black Pearl Painters Residential Project-3-1",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Painters-Residential-Project-3-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Painters-Residential-Project-3-2-400x284.jpg",
+      "alt": "painters residential projects 3-2",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/482217105_1189422856207708_2231791372867806786_n-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/482217105_1189422856207708_2231791372867806786_n-1-400x284.jpg",
+      "alt": "Black Pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/unnamed-400x284.webp",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/unnamed-400x284.webp",
+      "alt": "unnamed",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/04/House-After-Image-1024-x1024-400x284.png",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/04/House-After-Image-1024-x1024-400x284.png",
+      "alt": "Professional Painters Near Me",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/Black-Pearl-4.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/Black-Pearl-4.jpg",
+      "alt": "Black Pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/Black-Pearl3.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/Black-Pearl3.jpg",
+      "alt": "Black pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/Black-Pearl-6.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/Black-Pearl-6.jpg",
+      "alt": "Black Pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/Black-Pearl-5.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/Black-Pearl-5.jpg",
+      "alt": "Black Pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/Black-Pearl-8.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/Black-Pearl-8.jpg",
+      "alt": "Black Pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/481084157_1183914843425176_8141443818241360986_n-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/481084157_1183914843425176_8141443818241360986_n-400x284.jpg",
+      "alt": "image black pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/39664854_709831066047956_2228844738201518080_n-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/39664854_709831066047956_2228844738201518080_n-400x284.jpg",
+      "alt": "After House Painting",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Painters-Residential-Project-2-3-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Painters-Residential-Project-2-3-400x284.jpg",
+      "alt": "Painters Residential Project 2 3",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Painters-Residential-Project-3-7-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Painters-Residential-Project-3-7-400x284.jpg",
+      "alt": "protecting and enhancing",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Painters-Residential-Project-2-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Painters-Residential-Project-2-2-400x284.jpg",
+      "alt": "professional exterior painting",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Residential-Project-2-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Residential-Project-2-1-400x284.jpg",
+      "alt": "Black Pearl Painters Residential Project 2 1",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Painters-Residential-Project-2-4-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Painters-Residential-Project-2-4-400x284.jpg",
+      "alt": "Painters Residential Project 2 4",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-15-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-15-400x284.jpg",
+      "alt": "damaged siding on a commercial building",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/36983678_668259800205083_1332064465968955392_n-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/36983678_668259800205083_1332064465968955392_n-1-400x284.jpg",
+      "alt": "image black pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/36983678_668259800205083_1332064465968955392_n-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/36983678_668259800205083_1332064465968955392_n-400x284.jpg",
+      "alt": "black pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/05/94582111_1141461826218209_1893652339231817728_n-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/05/94582111_1141461826218209_1893652339231817728_n-400x284.jpg",
+      "alt": "image black pearl",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Lake Tapps, WA"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0104-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0104-400x284.jpg",
+      "alt": "19214 after DJI 0104",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07707-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07707-400x284.jpg",
+      "alt": "19214 after DSC07707",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0065-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0065-400x284.jpg",
+      "alt": "19214 after DJI 0065",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0113-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0113-400x284.jpg",
+      "alt": "19214 after DJI 0113",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07704-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07704-400x284.jpg",
+      "alt": "19214 after DSC07704",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0102-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0102-400x284.jpg",
+      "alt": "19214 after DJI 0102",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0077-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0077-400x284.jpg",
+      "alt": "19214 after DJI 0077",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0074-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0074-400x284.jpg",
+      "alt": "19214 after DJI 0074",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0048-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0048-400x284.jpg",
+      "alt": "19214 after DJI 0048",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07758-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07758-400x284.jpg",
+      "alt": "19214 after DSC07758",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07770-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07770-400x284.jpg",
+      "alt": "19214 after DSC07770",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07779-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07779-400x284.jpg",
+      "alt": "19214 after DSC07779",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07752-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07752-400x284.jpg",
+      "alt": "19214 after DSC07752",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07794-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07794-400x284.jpg",
+      "alt": "19214 after DSC07794",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07782-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07782-400x284.jpg",
+      "alt": "19214 after DSC07782",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07740-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07740-400x284.jpg",
+      "alt": "19214 after DSC07740",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07797-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07797-400x284.jpg",
+      "alt": "19214 after DSC07797",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07807-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07807-400x284.jpg",
+      "alt": "19214 after DSC07807",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0086-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0086-400x284.jpg",
+      "alt": "19214 after DJI 0086",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0092-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0092-400x284.jpg",
+      "alt": "19214 after DJI 0092",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07727-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07727-400x284.jpg",
+      "alt": "19214 after DSC07727",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07678-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07678-400x284.jpg",
+      "alt": "19214 after DSC07678",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07719-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07719-400x284.jpg",
+      "alt": "19214 after DSC07719",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0053-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0053-400x284.jpg",
+      "alt": "19214 after DJI 0053",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07686-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07686-400x284.jpg",
+      "alt": "19214 after DSC07686",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07734-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07734-400x284.jpg",
+      "alt": "19214 after DSC07734",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DJI_0056-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DJI_0056-1-400x284.jpg",
+      "alt": "long range shot of a two-story home with a lush lawn",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07695-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07695-400x284.jpg",
+      "alt": "19214 after DSC07695",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/19214-after-DSC07680-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/19214-after-DSC07680-400x284.jpg",
+      "alt": "19214 after DSC07680",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Bonney Lake, WA"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DJI_0125-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DJI_0125-400x284.jpg",
+      "alt": "14219 after DJI 0125",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DJI_0119-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DJI_0119-400x284.jpg",
+      "alt": "14219 after DJI 0119",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DJI_0134-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DJI_0134-1-400x284.jpg",
+      "alt": "14219 after DJI 0134 1",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DJI_0146-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DJI_0146-400x284.jpg",
+      "alt": "14219 after DJI 0146",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07812-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07812-400x284.jpg",
+      "alt": "14219 after DSC07812",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07811-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07811-400x284.jpg",
+      "alt": "14219 after DSC07811",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DJI_0140-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DJI_0140-400x284.jpg",
+      "alt": "14219 after DJI 0140",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07821-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07821-400x284.jpg",
+      "alt": "14219 after DSC07821",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07836-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07836-400x284.jpg",
+      "alt": "14219 after DSC07836",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07833-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07833-400x284.jpg",
+      "alt": "14219 after DSC07833",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07824-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07824-400x284.jpg",
+      "alt": "14219 after DSC07824",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07869-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07869-400x284.jpg",
+      "alt": "Side view of a backyard patio",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07854-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07854-400x284.jpg",
+      "alt": "14219 after DSC07854",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DSC07851-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DSC07851-400x284.jpg",
+      "alt": "14219 after DSC07851",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/14219-after-DJI_0116-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/14219-after-DJI_0116-400x284.jpg",
+      "alt": "14219 after DJI 0116",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Commercial & Industrial Projects"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Good Samaritan Episcopal Church"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-1-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 1",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-2-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 2",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-3-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-3-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 3",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-4-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-4-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 4",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-5-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-5-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 5",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-6-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-6-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 6",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-7-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-7-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 7",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-8-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-8-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 8",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-9-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/11/Good-Samaritan-Episcopal-Church-9-400x284.jpg",
+      "alt": "Good Samaritan Episcopal Church 9",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Ascend Gymnastics"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-1-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-1-1-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-1-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-1-2-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-1-4-e1747667807389-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-1-4-e1747667807389-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Gerber Collision"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-6-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-6-400x284.jpg",
+      "alt": "gerber collision 6",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-17-e1746717029790-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-17-e1746717029790-400x284.jpg",
+      "alt": "gerber collision",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-1-400x284.jpg",
+      "alt": "gerber collision 1",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-2-400x284.jpg",
+      "alt": "gerber collision 2",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-3-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-3-400x284.jpg",
+      "alt": "gerber collision 3",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-4-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-4-400x284.jpg",
+      "alt": "gerber collision 4",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-5-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-5-400x284.jpg",
+      "alt": "gerber collision 5",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-7-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-7-400x284.jpg",
+      "alt": "gerber collision 7",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-8-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-8-400x284.jpg",
+      "alt": "gerber collision 8",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-9-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-9-400x284.jpg",
+      "alt": "gerber collision 9",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-10-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-10-400x284.jpg",
+      "alt": "gerber collision 10",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-11-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-11-400x284.jpg",
+      "alt": "gerber collision 11",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-12-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-12-400x284.jpg",
+      "alt": "gerber collision 12",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-13-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-13-400x284.jpg",
+      "alt": "gerber collision 13",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-14-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-14-400x284.jpg",
+      "alt": "gerber collision 14",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-15-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-15-400x284.jpg",
+      "alt": "damaged siding on a commercial building",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Gerber-Collision-16-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Gerber-Collision-16-400x284.jpg",
+      "alt": "gerber collision 16",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Larson"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Larson-7-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Larson-7-400x284.jpg",
+      "alt": "larson 7",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Larson-5-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Larson-5-400x284.jpg",
+      "alt": "larson 5",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Larson-4-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Larson-4-400x284.jpg",
+      "alt": "larson 4",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Larson-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Larson-1-400x284.jpg",
+      "alt": "larson 1",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Larson-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Larson-2-400x284.jpg",
+      "alt": "larson 2",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Larson-3-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Larson-3-400x284.jpg",
+      "alt": "larson 3",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Larson-6-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Larson-6-400x284.jpg",
+      "alt": "larson 6",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Larson-8-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Larson-8-400x284.jpg",
+      "alt": "larson 8",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Condos & Townhomes Projects"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Morning View Townhomes"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "BEFORE"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-5-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-5-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-6-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-6-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-7-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-7-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-8-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-8-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-9-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-9-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-10-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-10-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-11-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-11-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-12-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-12-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-13-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-13-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-14-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-14-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-15-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-15-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-16-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-16-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-17-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-17-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-1-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-2-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-3-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-3-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-4-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-Before-4-400x284.jpg",
+      "alt": "Morning View Townhomes Before",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "AFTER"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-7-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-7-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-9-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-9-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-8-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-8-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-10-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-10-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-4-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-4-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-5-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-5-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-6-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-6-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-11-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-11-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-12-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-12-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-13-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-13-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-14-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-14-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-15-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-15-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-16-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-16-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-17-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-17-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-18-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-18-400x284.jpg",
+      "alt": "Morning View Townhomes",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-19-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-19-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-1-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-2-400x284.jpg",
+      "alt": "Morning View Townhomes After",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2025/06/Morning-View-Townhomes-After-3-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2025/06/Morning-View-Townhomes-After-3-400x284.jpg",
+      "alt": "Morning View Townhome After",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Issaquah Homes"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-25-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-25-400x284.jpg",
+      "alt": "refresh",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-26-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-26-400x284.jpg",
+      "alt": "Issaquah Homes 26",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-27-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-27-400x284.jpg",
+      "alt": "COA/TOA/HOA and Multifamily Painters",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-24-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-24-400x284.jpg",
+      "alt": "Condo & Townhome Painters",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-1-400x284.jpg",
+      "alt": "Issaquah Homes 1",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-2-400x284.jpg",
+      "alt": "Issaquah Homes 2",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-3-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-3-400x284.jpg",
+      "alt": "Issaquah Homes 3",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-4-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-4-400x284.jpg",
+      "alt": "Issaquah Homes 4",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-5-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-5-400x284.jpg",
+      "alt": "Issaquah Homes 5",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-6-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-6-400x284.jpg",
+      "alt": "Issaquah Homes 6",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-7-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-7-400x284.jpg",
+      "alt": "Issaquah Homes 7",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-8-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-8-400x284.jpg",
+      "alt": "Issaquah Homes 8",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-9-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-9-400x284.jpg",
+      "alt": "Issaquah Homes 9",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-10-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-10-400x284.jpg",
+      "alt": "Issaquah Homes 10",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-11-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-11-400x284.jpg",
+      "alt": "Issaquah Homes 11",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-12-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-12-400x284.jpg",
+      "alt": "Issaquah Homes 12",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-13-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-13-400x284.jpg",
+      "alt": "Issaquah Homes 13",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-14-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-14-400x284.jpg",
+      "alt": "Issaquah Homes 14",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-15-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-15-400x284.jpg",
+      "alt": "Issaquah Homes 15",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-16-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-16-400x284.jpg",
+      "alt": "Condo and Townhome Painters",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-17-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-17-400x284.jpg",
+      "alt": "Issaquah Homes 17",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-18-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-18-400x284.jpg",
+      "alt": "Issaquah Homes 18",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-19-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-19-400x284.jpg",
+      "alt": "Issaquah Homes 19",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-20-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-20-400x284.jpg",
+      "alt": "Condo and Townhome Painters",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-21-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-21-400x284.jpg",
+      "alt": "Issaquah Homes21",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-22-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-22-400x284.jpg",
+      "alt": "Issaquah Homes 22",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/12/Issaquah-Homes-23-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/12/Issaquah-Homes-23-400x284.jpg",
+      "alt": "Issaquah Homes 23",
+      "title": "Gallery"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Buckley Townhomes"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-21-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-21-400x284.jpg",
+      "alt": "transforming homes",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-12-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-12-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-15-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-15-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-13-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-13-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-19-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-19-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-20-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-20-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-9-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-9-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-8-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-8-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-10-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-10-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-17-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-17-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-18-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-18-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-14-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-14-400x284.jpg",
+      "alt": "refresh your home",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-2-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-2-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-4-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-4-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-11-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-11-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-1-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-1-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-5-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-5-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-6-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-6-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-7-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-7-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-3-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-3-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-16-400x284.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Black-Pearl-Painters-Commercial-Project-3-16-400x284.jpg",
+      "alt": "Black Pearl Painters Commercial Project",
+      "title": "Gallery"
+    }
+  ],
+  "faqs": [],
+  "type": "page",
+  "kind": "page",
+  "htmlBytes": 756379
+}

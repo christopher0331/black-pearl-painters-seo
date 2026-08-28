@@ -1,0 +1,184 @@
+{
+  "path": "/paint-prep/",
+  "url": "https://blackpearlpainters.com/paint-prep/",
+  "title": "Paint Prep - Black Pearl Painters",
+  "desc": "Paint Prep. Black Pearl Painters",
+  "canonical": "https://blackpearlpainters.com/paint-prep/",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "h1": [
+    "Paint Prep"
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Paint Prep"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/05/replacementblog1-400x250.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/05/replacementblog1-400x250.jpg",
+      "alt": "The Homeowner’s Guide to May Surface Prep: Managing PNW Moisture for a Lasting Exterior Finish",
+      "title": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Homeowner’s Guide to May Surface Prep: Managing PNW Moisture for a Lasting Exterior Finish",
+      "href": "/the-homeowners-guide-to-may-surface-prep/"
+    },
+    {
+      "type": "paragraph",
+      "text": "May 28, 2026"
+    },
+    {
+      "type": "paragraph",
+      "text": "May surface prep is the essential process of removing biological growth and ensuring siding moisture levels fall below 12% before applying primer. For Bonney Lake residents, skipping these technical steps leads to rapid paint failure, such as peeling and bubbling,..."
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/03/professionalpaintprep1-400x250.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/03/professionalpaintprep1-400x250.jpg",
+      "alt": "Black Pearl Painters vs. DIY: Why Professional Paint Prep is the Key to Longevity",
+      "title": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Black Pearl Painters vs. DIY: Why Professional Paint Prep is the Key to Longevity",
+      "href": "/professional-paint-prep-key-to-longevity/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mar 20, 2026"
+    },
+    {
+      "type": "paragraph",
+      "text": "While many homeowners in Bonney Lake, Gig Harbor, and Tehaleh attempt DIY painting to save money, they frequently skip critical preparation steps. Professional paint prep uses industrial-grade primers and meticulous preparation techniques that prevent common peeling..."
+    },
+    {
+      "type": "paragraph",
+      "text": "CATEGORIES"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "2025 Color Capsule",
+        "Accent Walls",
+        "Black Pearl Painters",
+        "Bold Color Trends",
+        "Cabinet refresh",
+        "Cabinet Repainting",
+        "Carpentry & Siding Repair",
+        "carpentry and paint",
+        "Ceiling and Trim Paint Trends",
+        "Cleaning",
+        "color Drenching",
+        "color psychology",
+        "color trends",
+        "Commercial & Industrial Painters",
+        "commercial interior painting",
+        "Commercial Painters",
+        "Commercial painting",
+        "Commercial Property Painting",
+        "Community Events",
+        "Condo & Townhome Painting",
+        "Condo Exterior Painting",
+        "Condos & Townhomes",
+        "curb appeal",
+        "Earthy Interior Tones",
+        "Eco-friendly commercial painting",
+        "Eco-Friendly Paint",
+        "Expressive Colors",
+        "Exterior Paint Colors",
+        "Exterior Paint Maintenance",
+        "Exterior Painting",
+        "Fall Interior Painting",
+        "Fall Painting",
+        "Guide to Maintaining Your Condo or Townhome",
+        "HOA & Multifamily Painting",
+        "HOA Interior Painting Rules",
+        "HOA Painting Rules",
+        "Holiday Interior Refresh",
+        "Home Maintenance",
+        "Increasing Property Value",
+        "Increasing Residential Property Value",
+        "Industrial Painters",
+        "Interior Color Trends",
+        "Interior Painting",
+        "Kitchen Cabinet Repainting",
+        "Local-Inspired Colors",
+        "Low VOC Paint",
+        "Maintaining Your Condo or Townhomes Exterior",
+        "Office Painting",
+        "Older Home Painting",
+        "Older Home Restorations",
+        "paint finishes",
+        "Paint Prep",
+        "Paint Preparations",
+        "Paint Protection",
+        "Paint Sheens",
+        "Paint Types",
+        "Paint Warranties",
+        "Painting Contemporary Homes",
+        "Painting Decisions",
+        "Painting Estimate",
+        "Painting Historic Homes in Puget Sound",
+        "Painting Methods",
+        "painting older homes in Puget Sound",
+        "Painting Proposal",
+        "Painting Tips",
+        "Planning to paint",
+        "PNW Painters",
+        "Pressure Washing",
+        "Seasonal Painting",
+        "Sherwin-Williams Advantage",
+        "Sherwin-Williams Paint",
+        "Siding Prep",
+        "Small Space Painting",
+        "Surface Prep",
+        "Townhome Exterior Painting",
+        "Townhome painting",
+        "transforming homes",
+        "Types of paint",
+        "Uncategorized",
+        "Winter Home Inspection",
+        "winter painting"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "ARCHIVES"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "July 2026",
+        "June 2026",
+        "May 2026",
+        "April 2026",
+        "March 2026",
+        "February 2026",
+        "January 2026",
+        "December 2025",
+        "November 2025",
+        "October 2025",
+        "September 2025",
+        "August 2025",
+        "July 2025",
+        "June 2025",
+        "May 2025",
+        "April 2025",
+        "March 2025",
+        "February 2025",
+        "January 2025"
+      ]
+    }
+  ],
+  "faqs": [],
+  "type": "page",
+  "kind": "category",
+  "htmlBytes": 436792
+}

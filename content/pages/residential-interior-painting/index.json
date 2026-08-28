@@ -1,0 +1,87 @@
+{
+  "path": "/residential-interior-painting/",
+  "url": "https://blackpearlpainters.com/residential-interior-painting/",
+  "title": "Residential Interior Painting - Black Pearl Painters",
+  "desc": "At Black Pearl Painters, we take great care of your property and possess the essential interior painting skills that are required for surface preparation",
+  "canonical": "https://blackpearlpainters.com/residential-interior-painting/",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "h1": [
+    "Interior Painting"
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Interior Painting"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Our Services"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Interior Painting",
+      "href": "/interior-painting/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Your home or property is special, and—like many Americans—it is your biggest investment. At Black Pearl Painters, we take great care of your property and possess the essential skills that are required for surface preparation, and understanding the broad range of coating varieties."
+    },
+    {
+      "type": "paragraph",
+      "text": "We also have the ability to diagnose and solve the unique challenges of every project. Our skilled professionals work to ensure that surfaces are properly prepared before starting any job, and extra attention is given to the covering of areas that are not being painted. We understand the importance of a job well done, which includes all aspects of the project from start to finish."
+    },
+    {
+      "type": "paragraph",
+      "text": "INTERIOR PROJECTS"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Walls",
+        "Ceilings",
+        "Doors",
+        "Windows",
+        "Baseboard, Crown and other Trim Mouldings",
+        "Cabinets"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "OTHER INTERIOR PROJECTS"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Cabinetry",
+        "Entertainment Systems",
+        "Kitchen Cabinets"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Today"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Financing is Available"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Enhancify-financing.png",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Enhancify-financing.png",
+      "alt": "Enhancify financing",
+      "title": "Enhancify-Financing"
+    }
+  ],
+  "faqs": [],
+  "type": "page",
+  "kind": "page",
+  "htmlBytes": 350707
+}

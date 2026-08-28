@@ -60,6 +60,178 @@ export const CATEGORY_SCORES = {
   scores: [72, 44, 28, 36, 51, 34],
 };
 
+/** Same 4-bucket scoring as the Trustworthy Roofing live-site audit. */
+export const PARITY_SCORES = {
+  overall: 41,
+  technical: 58,
+  onPage: 44,
+  local: 20,
+  content: 36,
+  weights: { technical: 0.3, onPage: 0.25, local: 0.25, content: 0.2 },
+};
+
+export const CRAWL_STATS = {
+  htmlPagesSampled: 33,
+  sitemapUrls: 232,
+  pages: 44,
+  posts: 109,
+  categories: 79,
+  homepageDecodedKb: 747,
+  homepageRenderedKb: 1065,
+  galleryDecodedKb: 756,
+  galleryImgs: 198,
+  homepageScripts: 47,
+  canonicalsSampled: "33 of 33",
+  robotsBytes: 126,
+};
+
+export const CRAWL_ISSUES: Array<{
+  issue: string;
+  evidence: string;
+  impact: string;
+  tone: Tone;
+}> = [
+  {
+    tone: "danger",
+    issue: "Junk URLs in the sitemap",
+    evidence:
+      "page-sitemap.xml lists /thank-you/, /1-rated-exterior-house-painters-in-city-state/, and both “No Results Found” condo URLs. 79 category archives are in category-sitemap.xml.",
+    impact: "Google is handed 232 URLs; crawl budget is spent on pages that should not rank",
+  },
+  {
+    tone: "warning",
+    issue: "Homepage HTML weight",
+    evidence:
+      "Decoded HTML 746,673 bytes (Nitro HIT). Rendered DOM ~1.07 MB. 47 script elements. Gallery HTML 756 KB with 198 <img> tags.",
+    impact: "Core Web Vitals and crawl budget both take a hit",
+  },
+  {
+    tone: "warning",
+    issue: "Incomplete security headers",
+    evidence:
+      "HSTS preload is set. No CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, or Permissions-Policy. cache-control is max-age=0, s-maxage=3600.",
+    impact: "Not a ranking factor, but HTTPS trust signals are incomplete",
+  },
+  {
+    tone: "warning",
+    issue: "Viewport disables pinch-zoom",
+    evidence:
+      "meta viewport includes maximum-scale=1.0, user-scalable=0 on every sampled page",
+    impact: "Fails WCAG 1.4.4; mobile UX and ranking liability",
+  },
+  {
+    tone: "info",
+    issue: "xmlrpc still advertised",
+    evidence:
+      "link rel=pingback and EditURI to xmlrpc.php. SiteGround WAF returns 202 + captcha on xmlrpc/wp-login.",
+    impact: "Tags still leak the WordPress surface",
+  },
+  {
+    tone: "info",
+    issue: "Index footprint vs sitemap size",
+    evidence:
+      "site:blackpearlpainters.com surfaces money pages, blog, and about. The leftover {City} template and “No Results Found” URLs are not visibly competing.",
+    impact: "Most of the 15+ 1-rated city URLs are not earning rankings",
+  },
+];
+
+export const TITLE_PATTERNS: Array<{
+  pattern: string;
+  pages: string;
+  googleSees: string;
+  tone: Tone;
+}> = [
+  {
+    tone: "danger",
+    pattern: "Unreplaced merge tags",
+    pages: "/1-rated-exterior-house-painters-in-city-state/",
+    googleSees:
+      "Title “#1 Exterior House Painters in {City}, {State}”; H1 “{Title Text}”; description still has {City}, {State}",
+  },
+  {
+    tone: "danger",
+    pattern: "Broken condo H1s",
+    pages: "2 URLs",
+    googleSees:
+      "/best-puget-sound-condo-townhome-painting-service/ and /best-university-place-condo-townhome-painting-service/ both 200 with H1 “No Results Found”",
+  },
+  {
+    tone: "warning",
+    pattern: "“#1” titles",
+    pages: "15+ service and city pages",
+    googleSees:
+      "Black Pearl Painters: #1 Bonney Lake Painters — and the same superlative on interior, HOA, condo, carpentry, and 1-rated city URLs",
+  },
+  {
+    tone: "warning",
+    pattern: "Multiple H1s",
+    pages: "home, thank-you, Buckley, Sumner, Gig Harbor",
+    googleSees:
+      "Homepage 3 H1s (including “Financing is Available”). Thank-you 2. Three city hubs have 3 H1s each.",
+  },
+  {
+    tone: "warning",
+    pattern: "Too-long / templated descriptions",
+    pages: "HOA, interior, commercial, city clones",
+    googleSees:
+      "HOA 188 chars, interior 175, commercial 186. City pages reuse one sentence with the city swapped.",
+  },
+  {
+    tone: "info",
+    pattern: "Short or broken snippets",
+    pages: "about, reviews, Gig Harbor",
+    googleSees:
+      "About title 26 chars. Reviews: “Check out what our reviews!”. Gig Harbor title still contains raw &amp;.",
+  },
+];
+
+export const SCHEMA_FIELDS: Array<[string, string, string]> = [
+  ["@type", "Organization + Person, Article, WebSite, SearchAction", "PaintingContractor (keep WebSite)"],
+  ["name", "My Blog", "Black Pearl Painters"],
+  ["url", "https://blackpearlpainters.com (no trailing slash)", "https://blackpearlpainters.com/"],
+  ["image", "1200×1600 portrait project JPG", "Absolute logo or 1200×630 job-site photo"],
+  ["@id", "#person pointing at “My Blog”", "Canonical business entity URL"],
+  ["streetAddress", "(missing)", "Match GBP; or service-area disclosure"],
+  ["addressLocality", "(missing)", "Bonney Lake"],
+  ["addressRegion", "(missing)", "WA"],
+  ["postalCode", "(missing)", "GBP ZIP (98391 area)"],
+  ["telephone", "Not in JSON-LD; body has three numbers", "One primary NAP number"],
+  ["author", "GreenHaven Interactive", "Justin Schulke / Black Pearl Painters"],
+];
+
+export const CONTENT_QUALITY: Array<{ surface: string; finding: string; tone: Tone }> = [
+  {
+    tone: "danger",
+    surface: "City pages",
+    finding:
+      "15 /1-rated-exterior-house-painters-in-*/ URLs plus leftover {City}/{State} template. Same FAQ and stock sections; city name swapped. ~94% text overlap.",
+  },
+  {
+    tone: "danger",
+    surface: "Condo leftovers",
+    finding:
+      "Two indexed URLs render H1 “No Results Found” (broken Divi dynamic content) while /condo-and-townhome-painters/ is the real money page.",
+  },
+  {
+    tone: "warning",
+    surface: "Service cannibalization",
+    finding:
+      "Interior intent splits across /interior-house-painters/, /interior-painting/, /interior-painting-services/, /professional-interior-painting/, /residential-interior-painting/. Commercial has a second blog-listing URL.",
+  },
+  {
+    tone: "warning",
+    surface: "Gallery",
+    finding:
+      "198 <img> tags, ~207 words of copy, 756 KB HTML. Alts include “iStock 1384317531”, “Issaquah Homes 14”, “cropped favicon”.",
+  },
+  {
+    tone: "info",
+    surface: "Blog",
+    finding:
+      "109 posts in post-sitemap.xml (lastmod through 30 Jul 2026). Real topical coverage; category archives should not also be indexed.",
+  },
+];
+
 export const FINDINGS: Finding[] = [
   {
     id: "c1",
@@ -139,7 +311,7 @@ export const FINDINGS: Finding[] = [
     area: "Indexation",
     issue: "Thank-you page is indexable and in the sitemap",
     evidence:
-      "/thank-you/ robots is follow, index; lastmod in page-sitemap.xml. It has two H1s and no unique search value.",
+      "/thank-you/ robots is follow, index; lastmod in page-sitemap.xml. Two H1s. A leftover tel:+1234567890 placeholder sits next to the real numbers.",
     fix: "noindex, follow. Remove from the sitemap. Keep it as a post-submit destination only.",
   },
   {
@@ -238,7 +410,7 @@ export const FINDINGS: Finding[] = [
     area: "On-page",
     issue: "Repeated “Serving Tacoma…” H3s and inconsistent phones",
     evidence:
-      "The same H3 appears three times on the homepage. Contact adds (253) 222-9937 alongside (253) 203-5335 and (253) 921-2549. Schema SearchAction points at /?s={search_term_string}, which is noindex and nearly empty.",
+      "The same H3 appears three times on the homepage. Contact adds (253) 222-9937 alongside (253) 203-5335 and (253) 921-2549. /thank-you/ still has tel:+1234567890. Schema SearchAction points at /?s={search_term_string}.",
     fix: "One service-area heading. Primary click-to-call number in header + schema. Disable sitelinks search box schema if site search is not a product.",
   },
   {

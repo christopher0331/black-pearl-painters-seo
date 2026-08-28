@@ -1,0 +1,131 @@
+{
+  "brand": "Black Pearl Painters",
+  "tagline": "Residential & commercial painters in Bonney Lake, Pierce County, and the South Puget Sound.",
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about-black-pearl-painters/"
+    },
+    {
+      "label": "Services",
+      "href": "/#services",
+      "children": [
+        {
+          "label": "Exterior Painting",
+          "href": "/exterior-house-painters/"
+        },
+        {
+          "label": "Interior Painting",
+          "href": "/interior-house-painters/"
+        },
+        {
+          "label": "Commercial & Industrial",
+          "href": "/commercial-and-industrial-painters/"
+        },
+        {
+          "label": "Condo & Townhome",
+          "href": "/condo-and-townhome-painters/"
+        },
+        {
+          "label": "HOA & Multifamily",
+          "href": "/hoa-and-multifamily-painters/"
+        },
+        {
+          "label": "Carpentry & Siding Repair",
+          "href": "/carpentry-and-siding-repair/"
+        }
+      ]
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery/"
+    },
+    {
+      "label": "Reviews",
+      "href": "/reviews/"
+    },
+    {
+      "label": "Painting Tips",
+      "href": "/blog-painting-tips-black-pearl-painters/"
+    },
+    {
+      "label": "Financing",
+      "href": "/financing/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    }
+  ],
+  "people": [
+    {
+      "name": "Justin Schulke",
+      "role": "Owner / Estimator / Project Management",
+      "phone": "(253) 203-5335",
+      "tel": "2532035335",
+      "email": "Justin.Schulke@blackpearlpainters.com",
+      "photo": "/media/wp-content/uploads/2026/08/Justin-Schulke-BPP-scaled.jpeg"
+    },
+    {
+      "name": "Kellie Myler",
+      "role": "Owner / Office Manager",
+      "phone": "(253) 921-2549",
+      "tel": "2539212549",
+      "email": "Kellie.Myler@blackpearlpainters.com",
+      "photo": "/media/wp-content/uploads/2026/08/Kellie-Myler-BPP.jpg"
+    },
+    {
+      "name": "Shellie Davison",
+      "role": "Appointment Coordinator",
+      "phone": "(253) 222-9937",
+      "tel": "2532229937",
+      "email": "",
+      "photo": "/media/wp-content/uploads/2026/08/Shellie-Davison-BPP.jpeg"
+    }
+  ],
+  "favicon": "/media/wp-content/uploads/2024/09/cropped-favicon.png",
+  "quoteHref": "/request-a-quote/",
+  "areas": "Tacoma, Bonney Lake, Gig Harbor, Puyallup and surrounding areas",
+  "form": {
+    "times": [
+      "Morning",
+      "Lunch",
+      "Afternoon",
+      "Evening"
+    ],
+    "projectTypes": [
+      {
+        "v": "Painting",
+        "t": "Painting"
+      },
+      {
+        "v": "Siding",
+        "t": "Siding"
+      },
+      {
+        "v": "Light Carpentry",
+        "t": "Carpentry"
+      },
+      {
+        "v": "Coating",
+        "t": "Coating"
+      },
+      {
+        "v": "Other",
+        "t": "Other"
+      }
+    ],
+    "sources": [
+      "Referral",
+      "Google",
+      "Facebook",
+      "Direct Mailer",
+      "Home Advisor",
+      "Other"
+    ]
+  }
+}

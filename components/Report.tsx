@@ -5,6 +5,9 @@ import {
   AUDIT_DATE,
   CATEGORY_SCORES,
   COMPETITOR_ROWS,
+  CONTENT_QUALITY,
+  CRAWL_ISSUES,
+  CRAWL_STATS,
   FINDINGS,
   GAP_ROWS,
   IA_ROWS,
@@ -13,12 +16,15 @@ import {
   LIVE_SITE_STACK,
   MARKET_AS_OF,
   PAGE_ROWS,
+  PARITY_SCORES,
   PLAN,
   REPORT_STACK,
+  SCHEMA_FIELDS,
   SERP_HEADERS,
   SERP_ROWS,
   SERP_TONES,
   SITE,
+  TITLE_PATTERNS,
   TOP5_APPEARANCES,
   TONE_FOR_SEV,
   TRAFFIC_PEERS,
@@ -104,11 +110,13 @@ export default function Report() {
         </summary>
         <div className="mt-3 flex flex-col gap-3 text-sm leading-relaxed text-zinc-600">
           <p>
-            SEO section: live Chrome rendering, curl of HTML/headers/sitemaps
-            with a browser UA (a non-browser Python client received 403 WAF
-            pages), and comparison of location-page text. It is not a rankings
-            or PageSpeed report and does not include Search Console, CrUX, or
-            backlink data.
+            SEO section: live Chrome rendering of blackpearlpainters.com,
+            fetch of HTML/headers/sitemaps from that session (command-line curl
+            received SiteGround 202 CAPTCHA), and comparison of location-page
+            text. Scores use the same four buckets as the Trustworthy Roofing
+            audit (technical 30%, on-page 25%, local 25%, content 20%). It is
+            not a rankings or PageSpeed report and does not include Search
+            Console, CrUX, or backlink data.
           </p>
           <p>
             Competitive visibility tab: eight non-brand queries plus one brand
@@ -332,7 +340,7 @@ function CompetitiveTab() {
         </h2>
         <p className="text-sm leading-relaxed text-zinc-600">
           Without Semrush, Rank Math lastmod counts on blackpearlpainters.com
-          (231 unique sitemap URLs) show publishing velocity. The May 2026 spike
+          ({CRAWL_STATS.sitemapUrls} unique sitemap URLs) show publishing velocity. The May 2026 spike
           (59 URLs) is the city-page template push — more URLs, not more unique
           demand.
         </p>
@@ -390,22 +398,178 @@ function SeoTab({ score }: { score: number }) {
   const visible = FINDINGS.filter(
     (f) => filter === "All" || f.severity === filter,
   );
+  const mix = PARITY_SCORES;
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-        <Stat value={`${score}/100`} label="Overall SEO health" tone="warning" />
-        <Stat value={String(counts.Critical)} label="Critical issues" tone="danger" />
-        <Stat value="94%" label="City-page text overlap" tone="danger" />
-        <Stat value="0" label="LocalBusiness schema nodes" tone="danger" />
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
+        <Stat value={String(mix.overall)} label="Overall" tone="warning" />
+        <Stat value={String(mix.technical)} label="Technical crawl" tone="warning" />
+        <Stat value={String(mix.onPage)} label="On-page" tone="warning" />
+        <Stat value={String(mix.local)} label="Local SEO" tone="danger" />
+        <Stat value={String(mix.content)} label="Content" tone="warning" />
+      </div>
+      <p className="text-xs text-zinc-500">
+        Scores are 0–100. Weighted overall (same mix as the Trustworthy Roofing
+        audit): technical 30%, on-page 25%, local 25%, content 20%. Six-category
+        heuristic still scores {score}/100 below.
+      </p>
+
+      <div>
+        <div className="mb-1 flex justify-between text-xs text-zinc-500">
+          <span>Score mix toward 100</span>
+          <span>
+            {mix.overall} / 100 overall
+          </span>
+        </div>
+        <div className="flex h-2.5 overflow-hidden bg-zinc-100">
+          <div className="bg-red-700" style={{ width: `${mix.technical * 0.3}%` }} />
+          <div className="bg-amber-500" style={{ width: `${mix.onPage * 0.25}%` }} />
+          <div className="bg-orange-500" style={{ width: `${mix.local * 0.25}%` }} />
+          <div className="bg-sky-600" style={{ width: `${mix.content * 0.2}%` }} />
+        </div>
       </div>
 
-      <Callout tone="danger" title="Fix these before publishing more city pages">
-        A merge-tag template is indexed, two condo URLs render “No Results
-        Found”, and ~16 exterior city pages are near-duplicates. Schema still
-        identifies the publisher as “My Blog”. More location content will make
-        this worse until the template and entity markup are cleaned up.
+      <Callout tone="danger" title="Google is being told this business is “My Blog”">
+        JSON-LD @graph names the Organization/Person “My Blog”, authors every
+        key page as GreenHaven Interactive, and has no PaintingContractor,
+        address, geo, or telephone. Combined with no street/ZIP/map on Contact
+        and a leftover tel:+1234567890 on /thank-you/, local pack ranking is
+        fighting the markup, not using it.
       </Callout>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">What is working</h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          HTTPS, www→apex, and HTTP→HTTPS resolve in one hop (Chrome). Viewport
+          and lang=&quot;en-US&quot; are set. robots.txt is 200 (126 bytes) and
+          points at sitemap_index.xml. Rank Math emits self-referencing
+          canonicals on {CRAWL_STATS.canonicalsSampled} sampled HTML pages,
+          index/follow, Open Graph, and Twitter summary_large_image. Core
+          service pages have FAQPage JSON-LD. Reviews widget shows 4.9 from 108
+          reviews. Named owners and click-to-call are conversion-ready.
+          NitroPack is caching HTML (x-nitro-cache: HIT). HSTS preload is on.
+        </p>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Critical crawl and index issues
+        </h2>
+        <Caption>
+          Source: live Chrome HTTP responses and HTML head on {AUDIT_DATE}.{" "}
+          {CRAWL_STATS.htmlPagesSampled} HTML URLs sampled, plus robots.txt and{" "}
+          {CRAWL_STATS.sitemapUrls} sitemap URLs ({CRAWL_STATS.pages} pages,{" "}
+          {CRAWL_STATS.posts} posts, {CRAWL_STATS.categories} categories).
+          Command-line curl from this IP received SiteGround 202 CAPTCHA.
+        </Caption>
+        <DataTable
+          sticky
+          headers={["Issue", "Evidence", "Impact"]}
+          rows={CRAWL_ISSUES.map((r) => [r.issue, r.evidence, r.impact])}
+          rowTone={CRAWL_ISSUES.map((r) => r.tone)}
+        />
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          On-page title and description failures
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Titles and meta descriptions are Rank Math templates. Several
+          templates never got unique values, so Google is shown merge tags, the
+          same city snippet on a grid of 1-rated pages, and “No Results Found”
+          as the heading on two condo URLs that are still in the sitemap.
+        </p>
+        <DataTable
+          sticky
+          headers={["Pattern", "Pages", "What Google sees"]}
+          rows={TITLE_PATTERNS.map((r) => [r.pattern, r.pages, r.googleSees])}
+          rowTone={TITLE_PATTERNS.map((r) => r.tone)}
+        />
+      </section>
+
+      <div className="border border-zinc-200 bg-white p-4">
+        <h3 className="text-sm font-semibold text-ink">
+          LocalBusiness schema
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+          Markup exists, which is the right idea. The values inside it would
+          hurt a Knowledge Panel more than they help. There is no
+          PaintingContractor or LocalBusiness node.
+        </p>
+        <div className="mt-3">
+          <DataTable
+            headers={["Field", "Live value", "Should be"]}
+            rows={SCHEMA_FIELDS}
+          />
+        </div>
+      </div>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">NAP and trust mismatches</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="border border-zinc-200 bg-white p-4">
+            <h3 className="text-sm font-semibold text-ink">Phone</h3>
+            <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+              Visible numbers are (253) 203-5335, (253) 921-2549, and Contact
+              adds (253) 222-9937. Homepage tel: links match the first two.
+              /thank-you/ still ships tel:+1234567890 — a leftover template
+              number.
+            </p>
+            <p className="mt-2 text-xs text-zinc-500">
+              Click-to-call and schema should use one number that matches
+              Google Business Profile.
+            </p>
+          </div>
+          <div className="border border-zinc-200 bg-white p-4">
+            <h3 className="text-sm font-semibold text-ink">Address and map</h3>
+            <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+              Contact lists people, phones, and emails only. Homepage and
+              contact innerText have no street, city/ZIP, or map embed — only a
+              Google Maps preconnect. Word count on Contact is ~180.
+            </p>
+            <p className="mt-2 text-xs text-zinc-500">
+              Local pack ranking needs a consistent NAP matching GBP, or an
+              explicit service-area disclosure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">Content quality</h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Real painting copy exists on the main service pages. The rest of the
+          site was scaled like a doorway network: city-name swaps, leftover
+          merge tags, overlapping interior URLs, and a gallery that cannot pass
+          Core Web Vitals.
+        </p>
+        <DataTable
+          headers={["Surface", "Finding"]}
+          rows={CONTENT_QUALITY.map((r) => [r.surface, r.finding])}
+          rowTone={CONTENT_QUALITY.map((r) => r.tone)}
+        />
+      </section>
+
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        <Stat
+          value={`${score}/100`}
+          label="Six-category heuristic"
+          tone="warning"
+        />
+        <Stat
+          value={String(counts.Critical)}
+          label="Critical issues"
+          tone="danger"
+        />
+        <Stat value="94%" label="City-page text overlap" tone="danger" />
+        <Stat
+          value="0"
+          label="LocalBusiness schema nodes"
+          tone="danger"
+        />
+      </div>
 
       <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
         <section className="flex flex-col gap-2">
@@ -470,19 +634,6 @@ function SeoTab({ score }: { score: number }) {
           ])}
           rowTone={visible.map((f) => TONE_FOR_SEV[f.severity])}
         />
-      </section>
-
-      <section className="flex flex-col gap-2">
-        <h2 className="text-lg font-semibold text-ink">What is working</h2>
-        <p className="text-sm leading-relaxed text-zinc-600">
-          HTTPS, www→apex, and HTTP→HTTPS all resolve in one hop. robots.txt
-          allows Googlebot and points at sitemap_index.xml. Rank Math emits
-          canonicals, index/follow, Open Graph, and Twitter summary_large_image.
-          Core service pages have FAQPage JSON-LD. Reviews widget shows 4.9 from
-          108 reviews. Named owners, two click-to-call numbers, and a real quote
-          path are conversion-ready. NitroPack is caching HTML (x-nitro-cache:
-          HIT). Author archives are noindex. 404 returns a proper 404.
-        </p>
       </section>
 
       <section className="flex flex-col gap-2">

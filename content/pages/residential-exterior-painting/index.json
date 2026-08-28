@@ -1,0 +1,86 @@
+{
+  "path": "/residential-exterior-painting/",
+  "url": "https://blackpearlpainters.com/residential-exterior-painting/",
+  "title": "Residential Exterior Painting - Black Pearl Painters",
+  "desc": "We offer a complete line of exterior painting services to cover any project. All painted surfaces will be properly prepared prior to painting.",
+  "canonical": "https://blackpearlpainters.com/residential-exterior-painting/",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "h1": [
+    "Exterior Painting"
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Exterior Painting"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Our Services"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exterior Painting",
+      "href": "/exterior-painting/"
+    },
+    {
+      "type": "paragraph",
+      "text": "We offer a complete line of exterior services to cover any painting project. All painted surfaces will be properly prepared before receiving any finishes. We only use premium prep and final materials and paint to ensure a long-lasting paint job."
+    },
+    {
+      "type": "paragraph",
+      "text": "COMPLETE EXTERIOR PAINTING"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Wood, Composite & Vinyl Siding",
+        "Concrete",
+        "Doors & Windows",
+        "Fascia and Eaves",
+        "Decks, Railings, and Patio Covers",
+        "Wrought Iron Fences, Railings"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "OTHER RELATED SERVICES/REPLACEMENT SERVICES"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Wood Replacement",
+        "Wood Rot Replacement",
+        "Wood Repairs",
+        "Light Carpentry",
+        "Decks and Patio Covers",
+        "Mildewcide Paint Additives"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Today"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Financing is Available"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2024/10/Enhancify-financing.png",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2024/10/Enhancify-financing.png",
+      "alt": "Enhancify financing",
+      "title": "Enhancify-Financing"
+    }
+  ],
+  "faqs": [],
+  "type": "page",
+  "kind": "page",
+  "htmlBytes": 377731
+}

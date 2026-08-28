@@ -1,0 +1,84 @@
+{
+  "path": "/contact/",
+  "url": "https://blackpearlpainters.com/contact/",
+  "title": "Contact - Black Pearl Painters",
+  "desc": "We know some companies take days to get back to you to even provide you with a bid. Contact us today and we'll call you ASAP.",
+  "canonical": "https://blackpearlpainters.com/contact/",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "h1": [
+    "Contact"
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Contact"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Let's Connect"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Contact Us"
+    },
+    {
+      "type": "paragraph",
+      "text": "We know some companies take days to get back to you and sometimes weeks to even provide you with a bid. We change that and get back to you ASAP because we want to make sure to get you a bid and on our schedule as soon as possible! Contact us today for a free estimate!"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/08/Justin-Schulke-BPP-scaled.jpeg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/08/Justin-Schulke-BPP-scaled.jpeg",
+      "alt": "Justin Schulke BPP scaled",
+      "title": "Contact"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Justin Schulke (Owner/Estimator/Project Management)"
+    },
+    {
+      "type": "paragraph",
+      "text": "(253) 203-5335Justin.Schulke@blackpearlpainters.com"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/08/Kellie-Myler-BPP.jpg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/08/Kellie-Myler-BPP.jpg",
+      "alt": "Kellie Myler BPP",
+      "title": "Contact"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Kellie Myler (Owner/Office Manager)"
+    },
+    {
+      "type": "paragraph",
+      "text": "(253) 921-2549Kellie.Myler@blackpearlpainters.com"
+    },
+    {
+      "type": "image",
+      "src": "/media/wp-content/uploads/2026/08/Shellie-Davison-BPP.jpeg",
+      "cdn": "/media/FyjIRZSjDsjbplabclUolQbEQGjueguk/assets/images/optimized/rev-e009e4f/blackpearlpainters.com/wp-content/uploads/2026/08/Shellie-Davison-BPP.jpeg",
+      "alt": "Shellie Davison BPP",
+      "title": "Contact"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Shellie Davison (Appointment Coordinator)"
+    },
+    {
+      "type": "paragraph",
+      "text": "(253)222-9937"
+    }
+  ],
+  "faqs": [],
+  "type": "page",
+  "kind": "page",
+  "htmlBytes": 372952
+}

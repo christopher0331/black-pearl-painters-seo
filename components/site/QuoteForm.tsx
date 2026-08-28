@@ -95,7 +95,7 @@ export default function QuoteForm({ chrome }: { chrome: Chrome }) {
         Message *
         <textarea name="message" rows={5} required />
       </label>
-      <button className="btn" type="submit">
+      <button className="btn btn-gold" type="submit">
         Request a quote
       </button>
     </form>

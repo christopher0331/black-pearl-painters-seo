@@ -8,10 +8,10 @@ export default function Footer({ chrome }: { chrome: Chrome }) {
     <footer className="site-footer">
       <div className="footer-grid">
         <div>
+          <img src={chrome.favicon} alt="" width={48} height={48} />
           <strong>{chrome.brand}</strong>
           <p>{chrome.tagline}</p>
           <p className="muted">{chrome.areas}</p>
-          <p>No deposit. Pay upon completion. Sherwin-Williams paints.</p>
         </div>
         <div>
           <h2>Services</h2>
@@ -50,7 +50,7 @@ export default function Footer({ chrome }: { chrome: Chrome }) {
               <a href="/contact/">Contact</a>
             </li>
             <li>
-              <a href="/seo-audit/">SEO report</a>
+              <a href="/seo-audit/">SEO &amp; visibility report</a>
             </li>
           </ul>
         </div>
@@ -67,8 +67,9 @@ export default function Footer({ chrome }: { chrome: Chrome }) {
         </div>
       </div>
       <p className="legal">
-        © {new Date().getFullYear()} {chrome.brand}. Rebuilt in Next.js + React
-        on Netlify from the live site content.
+        © {new Date().getFullYear()} {chrome.brand}. No deposit. Pay upon
+        completion.{" "}
+        <a href="/seo-audit/">SEO &amp; visibility report</a>
       </p>
     </footer>
   );

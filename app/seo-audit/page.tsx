@@ -1,6 +1,4 @@
 import Report from "@/components/Report";
-import SiteShell from "@/components/site/SiteShell";
-import { loadChrome } from "@/lib/content";
 
 export const metadata = {
   title: "SEO & competitive visibility — Black Pearl Painters",
@@ -8,12 +6,18 @@ export const metadata = {
 };
 
 export default function SeoAuditPage() {
-  const chrome = loadChrome();
   return (
-    <SiteShell chrome={chrome}>
+    <div className="audit-app">
+      <header className="audit-top">
+        <a href="/">← Site clone</a>
+        <strong>SEO &amp; competitive visibility</strong>
+        <a className="audit-live" href="https://blackpearlpainters.com/">
+          Live WordPress site ↗
+        </a>
+      </header>
       <div className="audit-wrap" id="main">
         <Report />
       </div>
-    </SiteShell>
+    </div>
   );
 }

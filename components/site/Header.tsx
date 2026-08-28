@@ -12,20 +12,40 @@ export default function Header({ chrome }: { chrome: Chrome }) {
       <a className="skip" href="#main">
         Skip to content
       </a>
-      <div className="header-top">
+      <div className="topbar">
+        No deposit · Pay upon completion · Sherwin-Williams
+      </div>
+      <div className="header-bar">
         <a className="brand" href="/">
-          <img src={chrome.favicon} alt="" width={36} height={36} />
+          <img src={chrome.favicon} alt="" width={44} height={44} />
           <span>
             <strong>{chrome.brand}</strong>
             <em>Bonney Lake · Pierce County</em>
           </span>
         </a>
+        <nav className={open ? "nav open" : "nav"} aria-label="Primary">
+          {chrome.nav.map((item) =>
+            item.children ? (
+              <div key={item.label} className="nav-drop">
+                <a href={item.href}>{item.label}</a>
+                <div>
+                  {item.children.map((c) => (
+                    <a key={c.href} href={c.href} onClick={() => setOpen(false)}>
+                      {c.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
+                {item.label}
+              </a>
+            ),
+          )}
+        </nav>
         <div className="header-actions">
           <a className="phone" href={`tel:${primary.tel}`}>
             {primary.phone}
-          </a>
-          <a className="btn" href={chrome.quoteHref}>
-            Request a quote
           </a>
           <button
             className="menu-btn"
@@ -35,31 +55,11 @@ export default function Header({ chrome }: { chrome: Chrome }) {
           >
             Menu
           </button>
+          <a className="btn btn-gold" href={chrome.quoteHref}>
+            Free quote
+          </a>
         </div>
       </div>
-      <nav className={open ? "nav open" : "nav"} aria-label="Primary">
-        {chrome.nav.map((item) =>
-          item.children ? (
-            <details key={item.label} className="nav-drop">
-              <summary>{item.label}</summary>
-              <div>
-                {item.children.map((c) => (
-                  <a key={c.href} href={c.href} onClick={() => setOpen(false)}>
-                    {c.label}
-                  </a>
-                ))}
-              </div>
-            </details>
-          ) : (
-            <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
-              {item.label}
-            </a>
-          ),
-        )}
-        <a href="/seo-audit/" onClick={() => setOpen(false)}>
-          SEO report
-        </a>
-      </nav>
     </header>
   );
 }

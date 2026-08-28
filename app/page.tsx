@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import PageView from "@/components/site/PageView";
+import HomeView from "@/components/site/HomeView";
 import SiteShell from "@/components/site/SiteShell";
 import { loadChrome, loadPage } from "@/lib/content";
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <SiteShell chrome={chrome}>
-      <PageView page={page} chrome={chrome} />
+      <HomeView page={page} chrome={chrome} />
     </SiteShell>
   );
 }

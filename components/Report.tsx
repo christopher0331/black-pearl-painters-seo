@@ -20,19 +20,14 @@ import {
   PLAN,
   REPORT_STACK,
   SCHEMA_FIELDS,
-  SERP_HEADERS,
-  SERP_ROWS,
-  SERP_TONES,
   SITE,
   TITLE_PATTERNS,
-  TOP5_APPEARANCES,
   TONE_FOR_SEV,
   TRAFFIC_PEERS,
   TRAFFIC_VISITS,
   TRENDS_HOUSE_PAINTERS,
   TRENDS_MONTHS,
   TRENDS_PAINTERS_NEAR_ME,
-  VISIBILITY_COMPETITORS,
   findingCounts,
   overallScore,
   type Filter,
@@ -48,7 +43,7 @@ import {
 import { Callout, Caption, DataTable, Stat } from "@/components/ui";
 
 export default function Report() {
-  const [tab, setTab] = useState<ReportTab>("market");
+  const [tab, setTab] = useState<ReportTab>("seo");
   const score = overallScore();
 
   return (
@@ -217,10 +212,10 @@ function CompetitiveTab() {
         Semrush, Ahrefs, Similarweb, and SpyFu blocked or 404’d without a login.
         Black Pearl has no public Similarweb figure on LinkedIn. Charts below
         are the closest public substitutes: peer visit snapshots, Google Trends
-        demand in Washington, a live SERP position matrix, and sitemap lastmod
-        velocity. Paste a Semrush Domain Overview + Organic Research + Position
-        Tracking export to replace these with estimated organic traffic and
-        ranking keywords over 12 months.
+        demand in Washington, and sitemap lastmod velocity. Paste a Semrush
+        Domain Overview + Organic Research + Position Tracking export to
+        replace these with estimated organic traffic and ranking keywords over
+        12 months.
       </Callout>
 
       <section className="flex flex-col gap-2">
@@ -277,72 +272,6 @@ function CompetitiveTab() {
           · 17 Aug 2025–16 Aug 2026 (partial last week dropped). Axis: month ·
           interest index 0–100 relative to this pair. City-level queries are
           below Trends’ public threshold.
-        </Caption>
-      </section>
-
-      <div className="grid gap-8 lg:grid-cols-2">
-        <section className="flex flex-col gap-2">
-          <h2 className="text-lg font-semibold text-ink">
-            Share of top-5 visibility
-          </h2>
-          <p className="text-sm leading-relaxed text-zinc-600">
-            How many of eight non-brand queries each contractor domain appears
-            in (top 5 web results). Directories ignored.
-          </p>
-          <HorizontalBar
-            categories={VISIBILITY_COMPETITORS}
-            values={TOP5_APPEARANCES}
-            name="Top-5 appearances (of 8 queries)"
-            yMax={8}
-          />
-          <Caption>
-            Queries: house painters Bonney Lake WA; interior painters Bonney
-            Lake WA; exterior house painters Tacoma WA; house painters Puyallup
-            WA; painters Gig Harbor WA; HOA painters Pierce County WA; Tehaleh
-            painters; commercial painters Tacoma WA. Source: web-index result
-            order · {AUDIT_DATE}. Not geotargeted from 98391; local pack omitted.
-          </Caption>
-        </section>
-        <section className="flex flex-col gap-2">
-          <h2 className="text-lg font-semibold text-ink">
-            BPP ranking distribution
-          </h2>
-          <p className="text-sm leading-relaxed text-zinc-600">
-            Of those eight tracked keywords, where Black Pearl sits on this
-            snapshot. Semrush would split 1–3 / 4–10 / 11–20 / 21–50 / 51+
-            across thousands of keywords.
-          </p>
-          <Donut
-            slices={[
-              { label: "Positions 1–3", value: 3, color: chartColors.SUCCESS },
-              { label: "Not in top 5", value: 5, color: chartColors.DANGER },
-            ]}
-          />
-          <Caption>
-            In top 3: interior Bonney Lake (#1), house painters Bonney Lake
-            (#3), HOA Pierce County (#3). Missing: Puyallup, Gig Harbor, Tacoma
-            exterior, Tacoma commercial, Tehaleh.
-          </Caption>
-        </section>
-      </div>
-
-      <section className="flex flex-col gap-2">
-        <h2 className="text-lg font-semibold text-ink">
-          Position tracking — SERP vs main competitors
-        </h2>
-        <p className="text-sm leading-relaxed text-zinc-600">
-          First contractor URL in the result list. “—” = not in the top 5. Brand
-          query is shown last and is not in the 8-query score.
-        </p>
-        <DataTable
-          headers={SERP_HEADERS}
-          rows={SERP_ROWS}
-          rowTone={SERP_TONES}
-        />
-        <Caption>
-          Source: web search result order · {AUDIT_DATE}. Not guaranteed Google
-          organic rank from a Bonney Lake IP. Semrush Position Tracking would
-          add 12-month sparklines per row.
         </Caption>
       </section>
 
@@ -413,14 +342,6 @@ function CompetitiveTab() {
           Semrush organic traffic.
         </Caption>
       </section>
-
-      <Callout tone="info" title="To get the real Semrush graphs">
-        Export Domain Overview + Organic Research + Position Tracking for
-        blackpearlpainters.com, painternw.com, pacificpropaints.com, and
-        kdqualitypainting.com (database: google.com / United States, or a
-        Tacoma-area tracking campaign). Paste the CSVs and the traffic and
-        keyword-over-time charts can be plotted exactly.
-      </Callout>
     </div>
   );
 }

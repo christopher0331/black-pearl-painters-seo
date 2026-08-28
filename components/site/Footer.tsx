@@ -49,6 +49,9 @@ export default function Footer({ chrome }: { chrome: Chrome }) {
             <li>
               <a href="/contact/">Contact</a>
             </li>
+            <li>
+              <a href="/seo-audit/">SEO report</a>
+            </li>
           </ul>
         </div>
         <div>

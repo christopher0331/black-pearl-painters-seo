@@ -18,7 +18,7 @@ npm install
 npm run dev
 ```
 
-SEO audit (previous deliverable): [http://localhost:3000/seo-audit/](http://localhost:3000/seo-audit/)
+SEO audit (competitive visibility + live-site crawl): [http://localhost:3000/seo-audit/](http://localhost:3000/seo-audit/)
 
 ## Deploy
 

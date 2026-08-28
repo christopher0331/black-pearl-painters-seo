@@ -55,24 +55,57 @@ export default function Report() {
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-8 sm:px-6">
       <header className="flex flex-col gap-2">
         <p className="text-xs font-medium uppercase tracking-[0.16em] text-zinc-500">
-          SEO + competitive visibility · {AUDIT_DATE}
+          Combined report · {AUDIT_DATE}
         </p>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-          Black Pearl Painters — competitive visibility
+          Black Pearl Painters — SEO & competitive visibility
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-zinc-600">
-          Semrush-style organic research for{" "}
+          Two reports in one interface for{" "}
           <a className="underline decoration-zinc-300 underline-offset-2" href={SITE}>
             blackpearlpainters.com
           </a>
-          : main competitors, comparative SERP positions, search demand over
-          time, and peer traffic snapshots. Snapshot as of {MARKET_AS_OF}. This
-          report interface is {REPORT_STACK}. Live site audited: {LIVE_SITE_STACK}
-          . Semrush/GSC organic-visit history is not connected, so
-          traffic-over-time uses public peer estimates and Google Trends demand
-          — not estimated organic sessions.
+          : competitive visibility (SERPs, demand, peers) and a live-site
+          technical crawl using the same data points as the Trustworthy Roofing
+          audit. Snapshot as of {MARKET_AS_OF}. This interface is {REPORT_STACK}.
+          Live site audited: {LIVE_SITE_STACK}. Semrush/GSC organic-visit
+          history is not connected, so traffic-over-time uses public peer
+          estimates and Google Trends demand — not estimated organic sessions.
         </p>
       </header>
+
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
+        <Stat
+          value={String(PARITY_SCORES.overall)}
+          label="Overall (crawl mix)"
+          tone="warning"
+        />
+        <Stat
+          value={String(PARITY_SCORES.technical)}
+          label="Technical crawl"
+          tone="warning"
+        />
+        <Stat
+          value={String(PARITY_SCORES.onPage)}
+          label="On-page"
+          tone="warning"
+        />
+        <Stat
+          value={String(PARITY_SCORES.local)}
+          label="Local SEO"
+          tone="danger"
+        />
+        <Stat
+          value={String(PARITY_SCORES.content)}
+          label="Content"
+          tone="warning"
+        />
+      </div>
+      <p className="text-xs text-zinc-500">
+        Live-site scores, 0–100. Same mix as Trustworthy Roofing: technical
+        30%, on-page 25%, local 25%, content 20%. Open SEO findings for crawl
+        evidence; competitive visibility for SERP positions.
+      </p>
 
       <div className="flex flex-wrap gap-2 border-b border-zinc-200 pb-2">
         <TabPill active={tab === "market"} onClick={() => setTab("market")}>
@@ -402,17 +435,9 @@ function SeoTab({ score }: { score: number }) {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
-        <Stat value={String(mix.overall)} label="Overall" tone="warning" />
-        <Stat value={String(mix.technical)} label="Technical crawl" tone="warning" />
-        <Stat value={String(mix.onPage)} label="On-page" tone="warning" />
-        <Stat value={String(mix.local)} label="Local SEO" tone="danger" />
-        <Stat value={String(mix.content)} label="Content" tone="warning" />
-      </div>
       <p className="text-xs text-zinc-500">
-        Scores are 0–100. Weighted overall (same mix as the Trustworthy Roofing
-        audit): technical 30%, on-page 25%, local 25%, content 20%. Six-category
-        heuristic still scores {score}/100 below.
+        Scores above use the Trustworthy Roofing mix. Six-category heuristic
+        still scores {score}/100 further down this tab.
       </p>
 
       <div>

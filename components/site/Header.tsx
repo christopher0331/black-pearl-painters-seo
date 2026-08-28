@@ -56,6 +56,9 @@ export default function Header({ chrome }: { chrome: Chrome }) {
             </a>
           ),
         )}
+        <a href="/seo-audit/" onClick={() => setOpen(false)}>
+          SEO report
+        </a>
       </nav>
     </header>
   );

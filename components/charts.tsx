@@ -1,6 +1,8 @@
 "use client";
 
 import {
+  Area,
+  AreaChart,
   Bar,
   BarChart,
   CartesianGrid,
@@ -98,16 +100,67 @@ export function HorizontalBar({
   );
 }
 
+export function AreaLine({
+  categories,
+  values,
+  name,
+  height = 260,
+  yMax,
+  color = SUCCESS,
+}: {
+  categories: string[];
+  values: number[];
+  name: string;
+  height?: number;
+  yMax?: number;
+  color?: string;
+}) {
+  const data = categories.map((category, i) => ({
+    category,
+    value: values[i],
+  }));
+  return (
+    <div style={{ width: "100%", height }}>
+      <ResponsiveContainer>
+        <AreaChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
+          <CartesianGrid stroke={GRID} />
+          <XAxis
+            dataKey="category"
+            interval={1}
+            tick={{ fill: MUTED, fontSize: 10 }}
+          />
+          <YAxis
+            domain={[0, yMax ?? "auto"]}
+            tick={{ fill: MUTED, fontSize: 12 }}
+          />
+          <Tooltip />
+          <Area
+            type="monotone"
+            dataKey="value"
+            name={name}
+            stroke={color}
+            fill={color}
+            fillOpacity={0.22}
+            strokeWidth={2}
+          />
+        </AreaChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
 export function DualLine({
   categories,
   series,
   height = 240,
   yMax = 100,
+  interval = 0,
 }: {
   categories: string[];
   series: Array<{ name: string; data: number[]; color: string }>;
   height?: number;
   yMax?: number;
+  interval?: number;
 }) {
   const data = categories.map((category, i) => {
     const point: Record<string, string | number> = { category };
@@ -119,9 +172,13 @@ export function DualLine({
   return (
     <div style={{ width: "100%", height }}>
       <ResponsiveContainer>
-        <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+        <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
           <CartesianGrid stroke={GRID} />
-          <XAxis dataKey="category" tick={{ fill: MUTED, fontSize: 11 }} />
+          <XAxis
+            dataKey="category"
+            interval={interval}
+            tick={{ fill: MUTED, fontSize: 10 }}
+          />
           <YAxis domain={[0, yMax]} tick={{ fill: MUTED, fontSize: 12 }} />
           <Tooltip />
           <Legend />
@@ -132,7 +189,7 @@ export function DualLine({
               dataKey={s.name}
               stroke={s.color}
               strokeWidth={2}
-              dot={{ r: 3 }}
+              dot={{ r: 2 }}
               fill={s.color}
             />
           ))}

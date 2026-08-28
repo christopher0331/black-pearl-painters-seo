@@ -41,6 +41,52 @@ export const TRENDS_PAINTERS_NEAR_ME = [
   32, 29, 7, 7, 17, 13, 24, 22, 39, 16, 48, 29, 12,
 ];
 
+/** Digitized from Semrush Keywords → Organic → Other SERP Features (screenshot 28 Aug 2026). */
+export const SERP_FEATURE_MONTHS = [
+  "Dec 24",
+  "Jan 25",
+  "Feb 25",
+  "Mar 25",
+  "Apr 25",
+  "May 25",
+  "Jun 25",
+  "Jul 25",
+  "Aug 25",
+  "Sep 25",
+  "Oct 25",
+  "Nov 25",
+  "Dec 25",
+  "Jan 26",
+  "Feb 26",
+  "Mar 26",
+  "Apr 26",
+  "May 26",
+  "Jun 26",
+  "Jul 26",
+  "Aug 26",
+];
+export const SERP_FEATURE_COUNTS = [
+  8, 7, 8, 7, 6, 8, 9, 7, 8, 6, 7, 8, 7, 9, 8, 22, 38, 31, 4, 0, 0,
+];
+
+/** Semrush Keywords → Organic → Top 3. Same months as SERP_FEATURE_MONTHS. */
+export const TOP3_KEYWORD_COUNTS = [
+  5, 5, 5, 6, 7, 8, 9, 8, 7, 5, 4, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+];
+
+/** Semrush Traffic, 2Y view. Same months. Paid is unused. */
+export const TRAFFIC_ORGANIC = [
+  190, 175, 185, 310, 200, 160, 140, 120, 130, 145, 155, 140, 150, 135, 125,
+  160, 145, 220, 110, 100, 95,
+];
+export const TRAFFIC_BRANDED = [
+  140, 130, 135, 200, 140, 110, 90, 15, 20, 80, 100, 95, 110, 105, 100, 110,
+  105, 140, 100, 95, 90,
+];
+export const TRAFFIC_PAID = [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+];
+
 export const TRAFFIC_PEERS = [
   "Paint Pro's NW",
   "K&D Quality",
@@ -277,6 +323,15 @@ export const FINDINGS: Finding[] = [
     evidence:
       "Contact page lists people, phones, and emails only. Homepage innerText has no street, city/ZIP, or map embed beyond a Google Maps preconnect. Local pack ranking needs a consistent NAP matching Google Business Profile.",
     fix: "Publish the GBP address (or service-area disclosure if you hide the address) in the footer, contact page, and LocalBusiness schema. One format, every page.",
+  },
+  {
+    id: "h0",
+    severity: "High",
+    area: "Visibility",
+    issue: "Visibility stalled: two Top 3 keywords, flat traffic, SERP features at zero",
+    evidence:
+      "Semrush (screenshots, 28 Aug 2026): keywords in positions 1–3 peaked at 9 in Jun 2025, fell to 2 by Dec 2025, and stayed at 2 through Aug 2026. Organic traffic spiked near 320 in Mar 2025 then trended down to ~95; branded traffic follows at lower volume; paid is 0. Other SERP Features peaked ~38 in Apr 2026 and reached 0 by Jul 2026.",
+    fix: "Treat this as a ranking-and-trust problem, not a demand problem. Repair schema/NAP, collapse doorway city pages, and concentrate internal links on a few money URLs until Top 3 count and SERP extras move again.",
   },
   {
     id: "h1",

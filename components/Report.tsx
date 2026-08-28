@@ -20,9 +20,15 @@ import {
   PLAN,
   REPORT_STACK,
   SCHEMA_FIELDS,
+  SERP_FEATURE_COUNTS,
+  SERP_FEATURE_MONTHS,
   SITE,
   TITLE_PATTERNS,
   TONE_FOR_SEV,
+  TOP3_KEYWORD_COUNTS,
+  TRAFFIC_BRANDED,
+  TRAFFIC_ORGANIC,
+  TRAFFIC_PAID,
   TRAFFIC_PEERS,
   TRAFFIC_VISITS,
   TRENDS_HOUSE_PAINTERS,
@@ -34,6 +40,7 @@ import {
   type ReportTab,
 } from "@/lib/audit-data";
 import {
+  AreaLine,
   DualLine,
   Donut,
   HorizontalBar,
@@ -662,6 +669,113 @@ function SeoTab({ score }: { score: number }) {
           empty SVG placeholders. Gallery is the worst page in the crawl (198
           images).
         </p>
+      </section>
+
+      <Callout
+        tone="danger"
+        title="Organic visibility is stagnant: two Top 3 keywords, no traffic growth, and SERP extras at zero"
+      >
+        Semrush data for blackpearlpainters.com shows a ranking footprint that
+        is not compounding. Keywords in positions 1–3 peaked at nine in June
+        2025, fell to two by December 2025, and have remained at two through
+        August 2026 — more than eight months with no additional page-one
+        winners. Organic traffic spiked near 320 visits in March 2025, then
+        trended down to about 95; branded traffic follows the same shape at a
+        lower volume, including a mid-2025 dip toward zero. Paid search is
+        unused. Other SERP features (sitelinks, reviews, FAQs, and similar)
+        rose to the low thirties in April–May 2026 and collapsed to zero by
+        July. That combination is a trust-and-concentration problem, not a
+        seasonal drop in painter demand.
+      </Callout>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Keywords in the Top 3
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Count of ranking keywords in Google positions 1–3. The site reached
+          nine in mid-2025, then lost those positions through the second half
+          of the year. Since December 2025 the line is flat at two. Until that
+          count moves, growth is limited to whatever those two queries already
+          produce.
+        </p>
+        <AreaLine
+          categories={SERP_FEATURE_MONTHS}
+          values={TOP3_KEYWORD_COUNTS}
+          name="Keywords in Top 3"
+          yMax={12}
+          color="#ea580c"
+        />
+        <Caption>
+          Source: Semrush Keywords · Organic · Top 3 · digitized from the 28 Aug
+          2026 screenshot. Dec 2024–Feb 2025 = 5; Jun 2025 peak = 9; Dec
+          2025–Aug 2026 = 2 with no recovery.
+        </Caption>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Traffic (organic, branded, paid)
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Two-year Semrush traffic view. There is no sustained upward trend.
+          Organic and branded volume ended the window below the late-2024
+          starting range, after a one-month spike in March 2025 and a smaller
+          May 2026 bounce that did not hold. Paid traffic is zero throughout.
+        </p>
+        <DualLine
+          categories={SERP_FEATURE_MONTHS}
+          yMax={322}
+          height={280}
+          interval={1}
+          series={[
+            {
+              name: "Organic traffic",
+              data: TRAFFIC_ORGANIC,
+              color: "#1e3a5f",
+            },
+            {
+              name: "Branded traffic",
+              data: TRAFFIC_BRANDED,
+              color: "#7c3aed",
+            },
+            {
+              name: "Paid traffic",
+              data: TRAFFIC_PAID,
+              color: "#14b8a6",
+            },
+          ]}
+        />
+        <Caption>
+          Source: Semrush Traffic · 2Y · digitized from the 28 Aug 2026
+          screenshot. Axis is Semrush’s visit estimate (peak label 322), not
+          Google Analytics sessions. Paid remains 0 for the full period.
+        </Caption>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Other SERP features
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Extra blocks Google attaches to a result besides the blue link.
+          Features ran in a 5–10 band for more than a year, briefly reached
+          about 38 in April 2026 (still about 31 in May), and fell to zero by
+          July. The listing is competing without sitelinks, review stars, or
+          FAQ enhancements it had only a few months ago.
+        </p>
+        <AreaLine
+          categories={SERP_FEATURE_MONTHS}
+          values={SERP_FEATURE_COUNTS}
+          name="Other SERP features"
+          yMax={40}
+          color={chartColors.SUCCESS}
+        />
+        <Caption>
+          Source: Semrush Keywords · Organic · Other SERP Features · digitized
+          from the 28 Aug 2026 screenshot. Baseline ~5–10 through Feb 2026; Apr
+          peak ~38; May ~31; Jul–Aug 2026 = 0.
+        </Caption>
       </section>
     </div>
   );

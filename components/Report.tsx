@@ -1,0 +1,571 @@
+"use client";
+
+import { useState } from "react";
+import {
+  AUDIT_DATE,
+  CATEGORY_SCORES,
+  COMPETITOR_ROWS,
+  FINDINGS,
+  GAP_ROWS,
+  IA_ROWS,
+  LASTMOD_COUNTS,
+  LASTMOD_MONTHS,
+  LIVE_SITE_STACK,
+  MARKET_AS_OF,
+  PAGE_ROWS,
+  PLAN,
+  REPORT_STACK,
+  SERP_HEADERS,
+  SERP_ROWS,
+  SERP_TONES,
+  SITE,
+  TOP5_APPEARANCES,
+  TONE_FOR_SEV,
+  TRAFFIC_PEERS,
+  TRAFFIC_VISITS,
+  TRENDS_HOUSE_PAINTERS,
+  TRENDS_MONTHS,
+  TRENDS_PAINTERS_NEAR_ME,
+  VISIBILITY_COMPETITORS,
+  findingCounts,
+  overallScore,
+  type Filter,
+  type ReportTab,
+} from "@/lib/audit-data";
+import {
+  DualLine,
+  Donut,
+  HorizontalBar,
+  VerticalBar,
+  chartColors,
+} from "@/components/charts";
+import { Callout, Caption, DataTable, Stat } from "@/components/ui";
+
+export default function Report() {
+  const [tab, setTab] = useState<ReportTab>("market");
+  const score = overallScore();
+
+  return (
+    <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-8 sm:px-6">
+      <header className="flex flex-col gap-2">
+        <p className="text-xs font-medium uppercase tracking-[0.16em] text-zinc-500">
+          SEO + competitive visibility · {AUDIT_DATE}
+        </p>
+        <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+          Black Pearl Painters — competitive visibility
+        </h1>
+        <p className="max-w-3xl text-sm leading-relaxed text-zinc-600">
+          Semrush-style organic research for{" "}
+          <a className="underline decoration-zinc-300 underline-offset-2" href={SITE}>
+            blackpearlpainters.com
+          </a>
+          : main competitors, comparative SERP positions, search demand over
+          time, and peer traffic snapshots. Snapshot as of {MARKET_AS_OF}. This
+          report interface is {REPORT_STACK}. Live site audited: {LIVE_SITE_STACK}
+          . Semrush/GSC organic-visit history is not connected, so
+          traffic-over-time uses public peer estimates and Google Trends demand
+          — not estimated organic sessions.
+        </p>
+      </header>
+
+      <div className="flex flex-wrap gap-2 border-b border-zinc-200 pb-2">
+        <TabPill active={tab === "market"} onClick={() => setTab("market")}>
+          Competitive visibility
+        </TabPill>
+        <TabPill active={tab === "seo"} onClick={() => setTab("seo")}>
+          SEO findings
+        </TabPill>
+      </div>
+
+      {tab === "market" ? <CompetitiveTab /> : <SeoTab score={score} />}
+
+      <section className="flex flex-col gap-3">
+        <h2 className="text-lg font-semibold text-ink">30-day fix plan</h2>
+        <ol className="border border-zinc-200 bg-white">
+          {PLAN.map((item, i) => (
+            <li
+              key={item.week}
+              className="flex gap-4 border-b border-zinc-100 px-4 py-3 last:border-0"
+            >
+              <span className="w-20 shrink-0 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                {item.week}
+              </span>
+              <span className="text-sm leading-relaxed text-zinc-700">
+                {i + 1}. {item.content}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <details className="border border-zinc-200 bg-white px-4 py-3">
+        <summary className="cursor-pointer text-sm font-semibold text-ink">
+          Method and limits
+        </summary>
+        <div className="mt-3 flex flex-col gap-3 text-sm leading-relaxed text-zinc-600">
+          <p>
+            SEO section: live Chrome rendering, curl of HTML/headers/sitemaps
+            with a browser UA (a non-browser Python client received 403 WAF
+            pages), and comparison of location-page text. It is not a rankings
+            or PageSpeed report and does not include Search Console, CrUX, or
+            backlink data.
+          </p>
+          <p>
+            Competitive visibility tab: eight non-brand queries plus one brand
+            query, scored from web-index result order on {AUDIT_DATE} (not a
+            geotargeted Google SERP from 98391; Maps pack omitted). Keyword
+            demand over time is Google Trends interest for Washington (US-WA),
+            weekly values averaged by month, 17 Aug 2025–16 Aug 2026. Peer visit
+            estimates are LinkedIn company “Web Presence / Monthly Visits”
+            fields (Similarweb-derived) for painternw.com (~408),
+            kdqualitypainting.com (~498, +241% MoM), and runlandpainting.com
+            (~630, −35% MoM). Semrush, Ahrefs, Similarweb, and SpyFu were
+            blocked or 404 without a login, so BPP organic traffic and ranking
+            keyword counts over time are not estimated.
+          </p>
+          <p className="text-xs text-zinc-500">
+            robots.txt and sitemaps returned 200 for Chrome and Googlebot UAs.
+            SiteGround CAPTCHA challenged xmlrpc.php, wp-json, and wp-login
+            (202). SEO score is a weighted heuristic. Report UI stack:{" "}
+            {REPORT_STACK}.
+          </p>
+        </div>
+      </details>
+    </div>
+  );
+}
+
+function TabPill({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`rounded-full px-3 py-1 text-sm ${
+        active
+          ? "bg-ink text-white"
+          : "border border-zinc-200 bg-white text-zinc-600"
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
+
+function CompetitiveTab() {
+  return (
+    <div className="flex flex-col gap-8">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        <Stat value="Unlisted" label="BPP organic visits (public)" tone="warning" />
+        <Stat value="408–630" label="Peer monthly visits (3 locals)" />
+        <Stat value="3 / 8" label="Tracked keywords in top 5" tone="warning" />
+        <Stat value="#1" label="Best non-brand position" tone="success" />
+      </div>
+
+      <Callout
+        tone="warning"
+        title="Semrush Domain Overview is not connected — organic visits and ranking-keyword counts over time cannot be plotted for BPP"
+      >
+        Semrush, Ahrefs, Similarweb, and SpyFu blocked or 404’d without a login.
+        Black Pearl has no public Similarweb figure on LinkedIn. Charts below
+        are the closest public substitutes: peer visit snapshots, Google Trends
+        demand in Washington, a live SERP position matrix, and sitemap lastmod
+        velocity. Paste a Semrush Domain Overview + Organic Research + Position
+        Tracking export to replace these with estimated organic traffic and
+        ranking keywords over 12 months.
+      </Callout>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Organic traffic — local competitors with public estimates
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Public Similarweb-derived monthly visits exist only for three locals.
+          BPP, PacificPro, Stanton, Fresh Coat (franchise), and CertaPro are
+          omitted because they have no comparable local-domain figure.
+        </p>
+        <VerticalBar
+          categories={TRAFFIC_PEERS}
+          values={TRAFFIC_VISITS}
+          name="Estimated monthly visits"
+        />
+        <Caption>
+          Source: LinkedIn company Web Presence · Similarweb-derived · as of{" "}
+          {AUDIT_DATE}. Paint Pro’s NW ~408; K&D ~498 (+241% MoM); Runland ~630
+          (−35% MoM). Not Semrush organic traffic and not a time series.
+        </Caption>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Keyword demand over time (Washington)
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Search interest for the two highest-volume painter queries in
+          Washington, on the same 0–100 Google Trends scale. This is demand, not
+          how many keywords BPP ranks for. “House painters” follows a clear PNW
+          outdoor season: trough Oct–Feb, rise Mar–May, peak late summer.
+          “Painters near me” stays flatter and is the winter/indoor query worth
+          owning.
+        </p>
+        <DualLine
+          categories={TRENDS_MONTHS}
+          yMax={100}
+          series={[
+            {
+              name: "house painters (WA interest)",
+              data: TRENDS_HOUSE_PAINTERS,
+              color: chartColors.INFO,
+            },
+            {
+              name: "painters near me (WA interest)",
+              data: TRENDS_PAINTERS_NEAR_ME,
+              color: chartColors.WARN,
+            },
+          ]}
+        />
+        <Caption>
+          Source: Google Trends · geo US-WA · weekly interest averaged by month
+          · 17 Aug 2025–16 Aug 2026 (partial last week dropped). Axis: month ·
+          interest index 0–100 relative to this pair. City-level queries are
+          below Trends’ public threshold.
+        </Caption>
+      </section>
+
+      <div className="grid gap-8 lg:grid-cols-2">
+        <section className="flex flex-col gap-2">
+          <h2 className="text-lg font-semibold text-ink">
+            Share of top-5 visibility
+          </h2>
+          <p className="text-sm leading-relaxed text-zinc-600">
+            How many of eight non-brand queries each contractor domain appears
+            in (top 5 web results). Directories ignored.
+          </p>
+          <HorizontalBar
+            categories={VISIBILITY_COMPETITORS}
+            values={TOP5_APPEARANCES}
+            name="Top-5 appearances (of 8 queries)"
+            yMax={8}
+          />
+          <Caption>
+            Queries: house painters Bonney Lake WA; interior painters Bonney
+            Lake WA; exterior house painters Tacoma WA; house painters Puyallup
+            WA; painters Gig Harbor WA; HOA painters Pierce County WA; Tehaleh
+            painters; commercial painters Tacoma WA. Source: web-index result
+            order · {AUDIT_DATE}. Not geotargeted from 98391; local pack omitted.
+          </Caption>
+        </section>
+        <section className="flex flex-col gap-2">
+          <h2 className="text-lg font-semibold text-ink">
+            BPP ranking distribution
+          </h2>
+          <p className="text-sm leading-relaxed text-zinc-600">
+            Of those eight tracked keywords, where Black Pearl sits on this
+            snapshot. Semrush would split 1–3 / 4–10 / 11–20 / 21–50 / 51+
+            across thousands of keywords.
+          </p>
+          <Donut
+            slices={[
+              { label: "Positions 1–3", value: 3, color: chartColors.SUCCESS },
+              { label: "Not in top 5", value: 5, color: chartColors.DANGER },
+            ]}
+          />
+          <Caption>
+            In top 3: interior Bonney Lake (#1), house painters Bonney Lake
+            (#3), HOA Pierce County (#3). Missing: Puyallup, Gig Harbor, Tacoma
+            exterior, Tacoma commercial, Tehaleh.
+          </Caption>
+        </section>
+      </div>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Position tracking — SERP vs main competitors
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          First contractor URL in the result list. “—” = not in the top 5. Brand
+          query is shown last and is not in the 8-query score.
+        </p>
+        <DataTable
+          headers={SERP_HEADERS}
+          rows={SERP_ROWS}
+          rowTone={SERP_TONES}
+        />
+        <Caption>
+          Source: web search result order · {AUDIT_DATE}. Not guaranteed Google
+          organic rank from a Bonney Lake IP. Semrush Position Tracking would
+          add 12-month sparklines per row.
+        </Caption>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Keyword gap (where competitors rank and BPP does not)
+        </h2>
+        <DataTable
+          headers={[
+            "Opportunity cluster",
+            "BPP in top 5?",
+            "Who is capturing it",
+            "Page to build or salvage",
+          ]}
+          rows={GAP_ROWS.map((r) => r.cells)}
+          rowTone={GAP_ROWS.map((r) => r.tone)}
+        />
+        <Caption>
+          Gap list is from the same {AUDIT_DATE} snapshot. BPP does appear for
+          Bonney Lake house (#3), Bonney Lake interior (#1), and Pierce HOA
+          (#3).
+        </Caption>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Indexable URLs lastmod’d over time (not organic traffic)
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Without Semrush, Rank Math lastmod counts on blackpearlpainters.com
+          (231 unique sitemap URLs) show publishing velocity. The May 2026 spike
+          (59 URLs) is the city-page template push — more URLs, not more unique
+          demand.
+        </p>
+        <DualLine
+          categories={LASTMOD_MONTHS}
+          yMax={60}
+          height={200}
+          series={[
+            {
+              name: "Sitemap URLs lastmod’d (count)",
+              data: LASTMOD_COUNTS,
+              color: chartColors.MUTED,
+            },
+          ]}
+        />
+        <Caption>
+          Source: Rank Math page + post sitemaps crawled {AUDIT_DATE}. Axis:
+          month · URL lastmod count. This is not sessions and not ranking
+          keywords.
+        </Caption>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">Main organic competitors</h2>
+        <DataTable
+          headers={[
+            "Domain",
+            "Role vs BPP",
+            "Est. monthly visits (public)",
+            "What they outrank you on",
+          ]}
+          rows={COMPETITOR_ROWS}
+        />
+        <Caption>
+          Visit estimates: LinkedIn company “Web Presence / Monthly Visits”
+          fields (Similarweb-derived, noisy on small sites). These are not
+          Semrush organic traffic.
+        </Caption>
+      </section>
+
+      <Callout tone="info" title="To get the real Semrush graphs">
+        Export Domain Overview + Organic Research + Position Tracking for
+        blackpearlpainters.com, painternw.com, pacificpropaints.com, and
+        kdqualitypainting.com (database: google.com / United States, or a
+        Tacoma-area tracking campaign). Paste the CSVs and the traffic and
+        keyword-over-time charts can be plotted exactly.
+      </Callout>
+    </div>
+  );
+}
+
+function SeoTab({ score }: { score: number }) {
+  const [filter, setFilter] = useState<Filter>("All");
+  const counts = findingCounts();
+  const visible = FINDINGS.filter(
+    (f) => filter === "All" || f.severity === filter,
+  );
+
+  return (
+    <div className="flex flex-col gap-8">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        <Stat value={`${score}/100`} label="Overall SEO health" tone="warning" />
+        <Stat value={String(counts.Critical)} label="Critical issues" tone="danger" />
+        <Stat value="94%" label="City-page text overlap" tone="danger" />
+        <Stat value="0" label="LocalBusiness schema nodes" tone="danger" />
+      </div>
+
+      <Callout tone="danger" title="Fix these before publishing more city pages">
+        A merge-tag template is indexed, two condo URLs render “No Results
+        Found”, and ~16 exterior city pages are near-duplicates. Schema still
+        identifies the publisher as “My Blog”. More location content will make
+        this worse until the template and entity markup are cleaned up.
+      </Callout>
+
+      <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
+        <section className="flex flex-col gap-2">
+          <h2 className="text-lg font-semibold text-ink">Category scores (0–100)</h2>
+          <HorizontalBar
+            categories={CATEGORY_SCORES.categories}
+            values={CATEGORY_SCORES.scores}
+            name="Score / 100"
+            yMax={100}
+            height={220}
+          />
+          <Caption>
+            Source: live HTML/header/schema crawl of blackpearlpainters.com ·{" "}
+            {AUDIT_DATE}. Weighted overall uses Crawl 15%, On-page 20%, Local
+            20%, Content 15%, Performance 15%, Accessibility 15%.
+          </Caption>
+        </section>
+        <section className="flex flex-col gap-2">
+          <h2 className="text-lg font-semibold text-ink">Findings by severity</h2>
+          <Donut
+            slices={[
+              { label: "Critical", value: counts.Critical, color: chartColors.DANGER },
+              { label: "High", value: counts.High, color: chartColors.WARN },
+              { label: "Medium", value: counts.Medium, color: chartColors.INFO },
+              { label: "Low", value: counts.Low, color: chartColors.MUTED },
+            ]}
+          />
+          <Caption>
+            {FINDINGS.length} issues from rendered DOM, Rank Math sitemaps, and
+            HTTP headers · {AUDIT_DATE}.
+          </Caption>
+        </section>
+      </div>
+
+      <section className="flex flex-col gap-3">
+        <h2 className="text-lg font-semibold text-ink">Prioritized findings</h2>
+        <div className="flex flex-wrap gap-2 border-b border-zinc-200 pb-2">
+          {(["All", "Critical", "High", "Medium", "Low"] as Filter[]).map(
+            (key) => (
+              <TabPill
+                key={key}
+                active={filter === key}
+                onClick={() => setFilter(key)}
+              >
+                {key}
+                {key === "All"
+                  ? ` (${FINDINGS.length})`
+                  : ` (${counts[key]})`}
+              </TabPill>
+            ),
+          )}
+        </div>
+        <DataTable
+          sticky
+          headers={["Sev", "Area", "Issue", "Evidence", "Fix"]}
+          rows={visible.map((f) => [
+            f.severity,
+            f.area,
+            f.issue,
+            f.evidence,
+            f.fix,
+          ])}
+          rowTone={visible.map((f) => TONE_FOR_SEV[f.severity])}
+        />
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">What is working</h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          HTTPS, www→apex, and HTTP→HTTPS all resolve in one hop. robots.txt
+          allows Googlebot and points at sitemap_index.xml. Rank Math emits
+          canonicals, index/follow, Open Graph, and Twitter summary_large_image.
+          Core service pages have FAQPage JSON-LD. Reviews widget shows 4.9 from
+          108 reviews. Named owners, two click-to-call numbers, and a real quote
+          path are conversion-ready. NitroPack is caching HTML (x-nitro-cache:
+          HIT). Author archives are noindex. 404 returns a proper 404.
+        </p>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Information architecture
+        </h2>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          The site is a local-service site that was scaled like a doorway
+          network. Nav money pages are fine. The sitemap then adds a grid of “#1
+          exterior painters in {"{city}"}” URLs, overlapping blog hubs, and
+          leftover templates. Crawl budget and ranking signals are split instead
+          of concentrated.
+        </p>
+        <DataTable
+          headers={["Intent", "Keep (canonical)", "Consolidate into it"]}
+          rows={IA_ROWS}
+        />
+      </section>
+
+      <div className="grid gap-4 md:grid-cols-2">
+        <div className="border border-zinc-200 bg-white p-4">
+          <h3 className="text-sm font-semibold text-ink">Stack and crawl surface</h3>
+          <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+            This report: {REPORT_STACK}. Live site still {LIVE_SITE_STACK}{" "}
+            (cdn-ilefmfi.nitrocdn.com, sg-captcha on wp-login/xmlrpc). Homepage
+            decoded HTML 747 KB. Gallery 756 KB. robots.txt is the default WP
+            file (Disallow: /wp-admin/).
+          </p>
+          <p className="mt-2 text-xs text-zinc-500">
+            Page sitemap lastmod 25 Aug 2026 · post sitemap lastmod 30 Jul 2026
+            · ~80+ blog posts. GTM container GTM-K7KPWDBX.
+          </p>
+        </div>
+        <div className="border border-zinc-200 bg-white p-4">
+          <h3 className="text-sm font-semibold text-ink">
+            Local entity vs what Google sees
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+            Visible brand: Black Pearl Painters, Bonney Lake / Pierce County,
+            Sherwin-Williams, no-deposit offer, 4.9 stars.
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+            Machine-readable brand: Organization name “My Blog”, Article author
+            GreenHaven Interactive, no geo, no GBP sameAs, no PaintingContractor
+            type.
+          </p>
+        </div>
+      </div>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Sampled page diagnostics
+        </h2>
+        <Caption>
+          Title, H1, and notes from the 28 Aug 2026 HTML snapshot. Status 200
+          unless noted.
+        </Caption>
+        <DataTable
+          sticky
+          headers={["Path", "Title", "H1", "Notes"]}
+          rows={PAGE_ROWS.map((r) => [r.path, r.title, r.h1, r.note])}
+          rowTone={PAGE_ROWS.map((r) => r.tone)}
+        />
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold text-ink">
+          Performance snapshot (homepage)
+        </h2>
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+          <Stat value="625 ms" label="TTFB (cached Nitro)" />
+          <Stat value="747 KB" label="Decoded HTML" tone="warning" />
+          <Stat value="47" label="Script elements" tone="warning" />
+          <Stat value="256 px" label="Header height" tone="warning" />
+        </div>
+        <p className="text-sm leading-relaxed text-zinc-600">
+          Nitro makes a repeat view look fast; the HTML payload and Divi/Nitro
+          script volume will still hurt LCP on mobile, especially with a 1080p
+          Vimeo progressive download and 28 lazy-loaded images that start as
+          empty SVG placeholders. Gallery is the worst page in the crawl (198
+          images).
+        </p>
+      </section>
+    </div>
+  );
+}

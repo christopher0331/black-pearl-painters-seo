@@ -31,6 +31,7 @@ export default function PageView({
     ...inner.features.filter((f) => f.image && !f.title).map((f) => f.image!),
   ];
   const storyFeatures = inner.features.filter((f) => f.title);
+  const showIntroItems = inner.introItems.length > 0 && !isPost && !isCategory;
 
   return (
     <main id="main">
@@ -61,11 +62,11 @@ export default function PageView({
       </section>
 
       <section className="band-paper page-body">
-      {inner.introItems.length ||
+      {(showIntroItems ||
       inner.introParas.length ||
-      inner.introHeadings.length ? (
+      inner.introHeadings.length) ? (
         <section className="section narrow">
-          {inner.introItems.length ? (
+          {showIntroItems ? (
             <ul className="hero-points ink">
               {inner.introItems.map((item) => (
                 <li key={item}>{item}</li>

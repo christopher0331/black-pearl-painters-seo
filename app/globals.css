@@ -277,6 +277,7 @@ img {
   position: relative;
   min-height: 420px;
   height: auto;
+  overflow: visible;
   background: #0c1b2a center / cover no-repeat;
   color: #fff;
   isolation: isolate;
@@ -303,6 +304,7 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 64px 20px 96px;
+  overflow: visible;
 }
 .hero-copy h1,
 .page-hero h1 {
@@ -355,6 +357,8 @@ img {
 .hero-points li {
   position: relative;
   padding-left: 1.2em;
+  line-height: 1.45;
+  overflow: visible;
 }
 .hero-points li::before {
   content: "✓";

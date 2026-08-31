@@ -154,19 +154,26 @@ export type Feature = {
   items: string[];
 };
 
+function looksLikeBenefitList(items: string[]) {
+  if (items.length < 2 || items.length > 6) return false;
+  if (items.some((item) => /uncategorized/i.test(item))) return false;
+  return /owned|estimate|deposit|decade|sherwin|payment|hassle|local|operated|flexible/.test(
+    items.join(" ").toLowerCase(),
+  );
+}
+
 export function parseInner(blocks: Block[]) {
   const kicker = blocks.find(
     (b) => b.type === "heading" && (b.level === 3 || b.level === 4),
   );
   const title = blocks.find((b) => b.type === "heading" && b.level === 1);
+  const introList = blocks.find(
+    (b, idx) =>
+      b.type === "list" && blocks.slice(0, idx).every((p) => !asImg(p)),
+  );
   const introItems =
-    blocks.find((b) => b.type === "list")?.type === "list"
-      ? (
-          blocks.find((b) => b.type === "list") as Extract<
-            Block,
-            { type: "list" }
-          >
-        ).items.map(cleanText)
+    introList?.type === "list" && looksLikeBenefitList(introList.items)
+      ? introList.items.map(cleanText)
       : [];
 
   const introParas: string[] = [];

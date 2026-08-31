@@ -55,11 +55,6 @@ export default function PageView({
               ))}
             </ul>
           ) : null}
-          {inner.introParas.slice(0, 2).map((p) => (
-            <p key={p.slice(0, 32)} className="lead">
-              {splitContact(p)}
-            </p>
-          ))}
           <div className="hero-actions">
             <a className="btn btn-gold" href={chrome.quoteHref}>
               Request a quote
@@ -73,11 +68,11 @@ export default function PageView({
       </section>
 
       <section className="band-paper page-body">
-      {inner.introParas.length > 2 || inner.introHeadings.length ? (
+      {inner.introParas.length || inner.introHeadings.length ? (
         <section className="section narrow">
-          {inner.introParas.slice(2).map((p) => (
+          {inner.introParas.map((p) => (
             <p key={p.slice(0, 32)} className="prose">
-              {p}
+              {splitContact(p)}
             </p>
           ))}
           {inner.introHeadings.map((h) => (

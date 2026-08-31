@@ -275,29 +275,28 @@ img {
 .hero,
 .page-hero {
   position: relative;
-  min-height: 560px;
-  height: 62svh;
-  max-height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: min(68svh, 640px);
+  height: auto;
   background: #0c1b2a center / cover no-repeat;
   color: #fff;
-  display: flex;
-  align-items: flex-end;
   isolation: isolate;
   overflow: hidden;
 }
+.hero::before,
+.page-hero::before {
+  content: "";
+  flex: 1 0 auto;
+  min-height: 64px;
+}
 .page-hero {
-  min-height: 420px;
-  height: 48svh;
-  max-height: 560px;
+  min-height: min(56svh, 520px);
 }
 .page-hero.no-photo {
-  min-height: 0;
-  height: auto;
-  max-height: none;
+  min-height: 340px;
   background: linear-gradient(135deg, #0c1b2a, #1c3d5a);
-}
-.page-hero.no-photo .hero-copy {
-  padding: 48px 20px 52px;
 }
 .hero-shade {
   position: absolute;
@@ -313,7 +312,8 @@ img {
   max-width: var(--max);
   width: 100%;
   margin: 0 auto;
-  padding: 72px 20px 108px;
+  padding: 12px 20px 112px;
+  flex-shrink: 0;
 }
 .hero-copy h1,
 .page-hero h1 {
@@ -952,7 +952,21 @@ img {
     grid-column: auto;
   }
   .hero-copy {
-    padding: 40px 20px 88px;
+    padding: 8px 20px 96px;
+  }
+  .hero::before,
+  .page-hero::before {
+    min-height: 72px;
+  }
+  .hero,
+  .page-hero {
+    min-height: min(60svh, 560px);
+  }
+  .page-hero {
+    min-height: min(52svh, 480px);
+  }
+  .page-hero.no-photo {
+    min-height: 260px;
   }
   .wave svg {
     height: 64px;

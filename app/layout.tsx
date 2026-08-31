@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Outfit, Playfair_Display } from "next/font/google";
+import { Fraunces, Outfit } from "next/font/google";
 import "./globals.css";
 
-const serif = Playfair_Display({
+const serif = Fraunces({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",

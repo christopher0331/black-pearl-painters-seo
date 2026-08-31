@@ -1,6 +1,7 @@
 import type { Chrome, PageRecord } from "@/lib/content";
 import { cleanText, parseInner } from "@/lib/sections";
 import QuoteForm from "./QuoteForm";
+import Wave from "./Wave";
 
 function splitContact(text: string) {
   return text.replace(
@@ -68,8 +69,10 @@ export default function PageView({
             </a>
           </div>
         </div>
+        <Wave fill="var(--paper)" overlay />
       </section>
 
+      <section className="band-paper page-body">
       {inner.introParas.length > 2 || inner.introHeadings.length ? (
         <section className="section narrow">
           {inner.introParas.slice(2).map((p) => (
@@ -186,6 +189,8 @@ export default function PageView({
           <QuoteForm chrome={chrome} />
         </section>
       ) : null}
+      <Wave fill="var(--navy)" />
+      </section>
 
       <section className="finance-band compact">
         <div>
@@ -195,6 +200,7 @@ export default function PageView({
         <a className="btn btn-gold" href={chrome.quoteHref}>
           Request a quote
         </a>
+        <Wave fill="var(--footer)" overlay />
       </section>
     </main>
   );

@@ -48,13 +48,6 @@ export default function PageView({
             <p className="eyebrow">{inner.kicker}</p>
           ) : null}
           <h1>{inner.title || page.h1[0] || page.title}</h1>
-          {inner.introItems.length ? (
-            <ul className="hero-points">
-              {inner.introItems.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          ) : null}
           <div className="hero-actions">
             <a className="btn btn-gold" href={chrome.quoteHref}>
               Request a quote
@@ -68,8 +61,17 @@ export default function PageView({
       </section>
 
       <section className="band-paper page-body">
-      {inner.introParas.length || inner.introHeadings.length ? (
+      {inner.introItems.length ||
+      inner.introParas.length ||
+      inner.introHeadings.length ? (
         <section className="section narrow">
+          {inner.introItems.length ? (
+            <ul className="hero-points ink">
+              {inner.introItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
           {inner.introParas.map((p) => (
             <p key={p.slice(0, 32)} className="prose">
               {splitContact(p)}
